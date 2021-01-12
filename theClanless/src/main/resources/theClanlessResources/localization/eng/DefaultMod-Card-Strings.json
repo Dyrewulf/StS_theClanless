@@ -1,0 +1,150 @@
+{
+  "theClanless:Acrobatics": {
+    "NAME": "Acrobatics",
+    "DESCRIPTION": "Gain !M! Buffer.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Buffer. NL Your next attack costs 1 less Energy."
+  },
+  "theClanless:Blur": {
+    "NAME": "Blur",
+    "DESCRIPTION": "Deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times."
+  },
+  "theClanless:BoxedIn": {
+    "NAME": "Boxed In",
+    "DESCRIPTION": "Gain !M! Press. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Press. NL Exhaust."
+  },
+  "theClanless:CatBurglary": {
+    "NAME": "Cat Burglary",
+    "DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust."
+  },
+  "theClanless:ComputerHacking": {
+    "NAME": "Computer Hacking",
+    "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable."
+  },
+  "theClanless:Distraction": {
+    "NAME": "Distraction",
+    "DESCRIPTION": "Draw !M! cards. Discard 2.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. Discard 2."
+  },
+  "theClanless:Dodge": {
+    "NAME": "Dodge",
+    "DESCRIPTION": "Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. "
+  },
+  "theClanless:FakeOut": {
+    "NAME": "Fake Out",
+    "DESCRIPTION": "Gain !M! Maneuver. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Maneuver. NL Exhaust."
+  },
+  "theClanless:FastHands": {
+    "NAME": "Fast Hands",
+    "DESCRIPTION": "Retrieve a card from your discard pile and reduce it's cost by !M! . NL The retrieved card Exhausts.",
+    "UPGRADE_DESCRIPTION": "Retrieve a card from your discard pile and reduce it's cost by !M! . NL The retrieved card Exhausts."
+  },
+  "theClanless:Flash": {
+    "NAME": "Flash",
+    "DESCRIPTION": "Gain !M! maneuvers and draw a card.",
+    "UPGRADE_DESCRIPTION": "Gain !M! maneuvers and draw a card."
+  },
+  "theClanless:InfernalPursuit": {
+    "NAME": "Infernal Pursuit",
+    "DESCRIPTION": "Whenever you play a card, draw a card.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a card, draw !M! cards."
+  },
+  "theClanless:KineResourcesContested": {
+    "NAME": "Kine Resources Contested",
+    "DESCRIPTION": "Consume Votes, deal !D! damage per vote.",
+    "UPGRADE_DESCRIPTION": "Consume Votes, deal !D! damage per vote."
+  },
+  "theClanless:LuckyBlow": {
+    "NAME": "Lucky Blow",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust. "
+  },
+  "theClanless:NimbleFeet": {
+    "NAME": "Nimble Feet",
+    "DESCRIPTION": "Your next Skill is played twice.",
+    "UPGRADE_DESCRIPTION": "Your next skill and next attack are played twice."
+  },
+  "theClanless:PraxisSeizure": {
+    "NAME": "Praxis Seizure",
+    "DESCRIPTION": "Gain !M! vote each turn.",
+    "UPGRADE_DESCRIPTION": "Gain !M! votes each turn."
+  },
+  "theClanless:Psyche": {
+    "NAME": "Psyche!",
+    "DESCRIPTION": "Gain !M! Maneuvers.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! Maneuvers. NL Take another turn after this one, keeping all maneuvers. NL Exhaust."
+  },
+  "theClanless:Sideslip": {
+    "NAME": "Sideslip",
+    "DESCRIPTION": "Gain !M! Maneuvers each turn.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! Maneuvers each turn."
+  },
+  "theClanless:TasteOfVitae": {
+    "NAME": "Taste of Vitae",
+    "DESCRIPTION": "Gain !M! Bloodheal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Bloodheal. NL Exhaust."
+  },
+  "theClanless:VampiricSpeed": {
+    "NAME": "Vampiric Speed",
+    "DESCRIPTION": "Gain !B! block. Consume 1 maneuver to gain !M! block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! block. Consume up to 2 maneuvers to gain !M! block each."
+  },
+
+
+  "theClanless:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "theClanless:DefaultCommonSkill": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. NL theclanless:Multiword_Keyword."
+  },
+  "theClanless:DefaultCommonPower": {
+    "NAME": "Hold Place",
+    "DESCRIPTION": "Gain !M! theclanless:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Keywords."
+  },
+  "theClanless:DefaultUncommonAttack": {
+    "NAME": "Big slap",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "theClanless:DefaultUncommonSkill": {
+    "NAME": "A Better Defend",
+    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
+  },
+  "theClanless:DefaultUncommonPower": {
+    "NAME": "Weirdness",
+    "DESCRIPTION": "Gain X theclanless:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 theclanless:Keywords."
+  },
+  "theClanless:DefaultRareAttack": {
+    "NAME": "TOUCH",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "theClanless:DefaultRareSkill": {
+    "NAME": "For Each Loop x2",
+    "DESCRIPTION": "Apply !M! Vulnerable to all enemies, 2 times.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Vulnerable to all enemies, 3 times."
+  },
+  "theClanless:DefaultRarePower": {
+    "NAME": "In-Progress Form",
+    "DESCRIPTION": "At the start of your turn, play a TOUCH."
+  },
+  "theClanless:DefaultAttackWithVariable": {
+    "NAME": "Special Strike",
+    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !theclanless:ENERGY_DAMAGE! damage total.)"
+  },
+  "theClanless:DefaultSecondMagicNumberSkill": {
+    "NAME": "Cool 2 Number Card",
+    "DESCRIPTION": "Apply !M! Vulnerable and !theclanless:SecondMagic! poison to an enemy."
+  },
+  "theClanless:OrbSkill": {
+    "NAME": "Get Orb",
+    "DESCRIPTION": "Channel 1 Default Orb."
+  }
+}
