@@ -77,7 +77,7 @@
   "theClanless:Psyche": {
     "NAME": "Psyche!",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers.",
-    "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:maneuvers. NL Take another turn after this one, keeping all theClanless:maneuvers. NL Exhaust."
+    "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
   },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
