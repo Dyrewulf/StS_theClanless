@@ -11,8 +11,8 @@
   },
   "theClanless:BoxedIn": {
     "NAME": "Boxed In",
-    "DESCRIPTION": "Gain !M! Press. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Press. NL Exhaust."
+    "DESCRIPTION": "Gain !M! theclanless:press. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:press. NL Exhaust."
   },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
@@ -36,8 +36,8 @@
   },
   "theClanless:FakeOut": {
     "NAME": "Fake Out",
-    "DESCRIPTION": "Gain !M! Maneuver. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Maneuver. NL Exhaust."
+    "DESCRIPTION": "Gain !M! theclanless:maneuver. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuver. NL Exhaust."
   },
   "theClanless:FastHands": {
     "NAME": "Fast Hands",
@@ -46,8 +46,8 @@
   },
   "theClanless:Flash": {
     "NAME": "Flash",
-    "DESCRIPTION": "Gain !M! maneuvers and draw a card.",
-    "UPGRADE_DESCRIPTION": "Gain !M! maneuvers and draw a card."
+    "DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card."
   },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
@@ -76,13 +76,13 @@
   },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
-    "DESCRIPTION": "Gain !M! Maneuvers.",
-    "UPGRADE_DESCRIPTION":  "Gain !M! Maneuvers. NL Take another turn after this one, keeping all maneuvers. NL Exhaust."
+    "DESCRIPTION": "Gain !M! theclanless:maneuvers.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
   },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
-    "DESCRIPTION": "Gain !M! Maneuvers each turn.",
-    "UPGRADE_DESCRIPTION":  "Gain !M! Maneuvers each turn."
+    "DESCRIPTION": "Gain !M! theclanless:maneuvers each turn.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:maneuvers each turn."
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
@@ -91,8 +91,8 @@
   },
   "theClanless:VampiricSpeed": {
     "NAME": "Vampiric Speed",
-    "DESCRIPTION": "Gain !B! block. Consume 1 maneuver to gain !M! block.",
-    "UPGRADE_DESCRIPTION": "Gain !B! block. Consume up to 2 maneuvers to gain !M! block each."
+    "DESCRIPTION": "Gain !B! block. Consume 1 theclanless:maneuver to gain !M! block.",
+    "UPGRADE_DESCRIPTION": "Gain !B! block. Consume up to 2 theclanless:maneuvers to gain !M! block each."
   },
 
 
@@ -106,8 +106,8 @@
   },
   "theClanless:DefaultCommonPower": {
     "NAME": "Hold Place",
-    "DESCRIPTION": "Gain !M! theclanless:Keyword.",
-    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Keywords."
+    "DESCRIPTION": "Gain !M! theclanless:keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:keywords."
   },
   "theClanless:DefaultUncommonAttack": {
     "NAME": "Big slap",
@@ -120,7 +120,7 @@
   "theClanless:DefaultUncommonPower": {
     "NAME": "Weirdness",
     "DESCRIPTION": "Gain X theclanless:Keywords.",
-    "UPGRADE_DESCRIPTION": "Gain X +1 theclanless:Keywords."
+    "UPGRADE_DESCRIPTION": "Gain X +1 theclanless:keywords."
   },
   "theClanless:DefaultRareAttack": {
     "NAME": "TOUCH",
@@ -137,11 +137,11 @@
   },
   "theClanless:DefaultAttackWithVariable": {
     "NAME": "Special Strike",
-    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !theclanless:ENERGY_DAMAGE! damage total.)"
+    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !theClanless:ENERGY_DAMAGE! damage total.)"
   },
   "theClanless:DefaultSecondMagicNumberSkill": {
     "NAME": "Cool 2 Number Card",
-    "DESCRIPTION": "Apply !M! Vulnerable and !theclanless:SecondMagic! poison to an enemy."
+    "DESCRIPTION": "Apply !M! Vulnerable and !theClanless:SM! poison to an enemy."
   },
   "theClanless:OrbSkill": {
     "NAME": "Get Orb",
