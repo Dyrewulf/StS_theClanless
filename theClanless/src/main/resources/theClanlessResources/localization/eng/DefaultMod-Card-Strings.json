@@ -63,6 +63,11 @@
     "DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card."
   },
+  "theClanless:GrowingFury": {
+    "NAME": "Growing Fury",
+    "DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!"
+  },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
     "DESCRIPTION": "Whenever you play a card, draw a card.",
