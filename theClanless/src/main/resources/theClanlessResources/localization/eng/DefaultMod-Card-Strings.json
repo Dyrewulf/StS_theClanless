@@ -103,6 +103,11 @@
     "DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust."
   },
+  "theClanless:ItsaTrap": {
+    "NAME": "Trap!",
+    "DESCRIPTION": "Whenever you gain a theclanless:press, gain another press.",
+    "UPGRADE_DESCRIPTION": "Whenever you gain a theclanless:press, gain another press."
+  },
   "theClanless:VampiricSpeed": {
     "NAME": "Vampiric Speed",
     "DESCRIPTION": "Gain !B! block. Consume 1 theclanless:maneuver to gain !M! block.",
