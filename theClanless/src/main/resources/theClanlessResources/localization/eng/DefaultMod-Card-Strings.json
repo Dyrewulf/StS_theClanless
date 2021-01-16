@@ -53,6 +53,11 @@
     "DESCRIPTION": "Retrieve a card from your discard pile and reduce it's cost by !M! . NL The retrieved card Exhausts.",
     "UPGRADE_DESCRIPTION": "Retrieve a card from your discard pile and reduce it's cost by !M! . NL The retrieved card Exhausts."
   },
+  "theClanless:FistsOfDeath": {
+    "NAME": "Fists of Death",
+    "DESCRIPTION": "Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength."
+  },
   "theClanless:Flash": {
     "NAME": "Flash",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card.",

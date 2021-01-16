@@ -55,7 +55,6 @@ public class CatBurglary extends AbstractDynamicCard {
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
 
         this.exhaust = true;
-        this.tags.add(CardTags.STRIKE);
     }
 
 
