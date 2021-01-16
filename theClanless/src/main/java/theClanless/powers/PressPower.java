@@ -57,13 +57,13 @@ public class PressPower extends AbstractPower implements CloneablePowerInterface
     @Override
     public void atEndOfTurn(final boolean isPlayer) {
         AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(owner, source, new StrengthPower(this.owner, this.amount), this.amount)
+                new ApplyPowerAction(owner, owner, new StrengthPower(this.owner, this.amount), this.amount)
         );
         AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(owner, source, new LoseStrengthPower(this.owner, this.amount), this.amount)
+                new ApplyPowerAction(owner, owner, new LoseStrengthPower(this.owner, this.amount), this.amount)
         );
         AbstractDungeon.actionManager.addToBottom(
-                new ReducePowerAction(owner, source, PressPower.POWER_ID, this.amount)
+                new ReducePowerAction(owner, owner, PressPower.POWER_ID, this.amount)
         );
     }
 

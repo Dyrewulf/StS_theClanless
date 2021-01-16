@@ -11,7 +11,7 @@
   "theClanless:BoxedIn": {
     "NAME": "Boxed In",
     "DESCRIPTION": "Gain !M! theclanless:Press. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Press. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Press."
   },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
@@ -46,7 +46,7 @@
   "theClanless:FakeOut": {
     "NAME": "Fake Out",
     "DESCRIPTION": "Gain !M! theclanless:Maneuver. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Maneuver. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Maneuver."
   },
   "theClanless:FastHands": {
     "NAME": "Fast Hands",
@@ -76,6 +76,11 @@
   "theClanless:LuckyBlow": {
     "NAME": "Lucky Blow",
     "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust. "
+  },
+  "theClanless:MightyGrapple": {
+    "NAME": "Mighty Grapple",
+    "DESCRIPTION": "Deal !D! damage and apply !M! press.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust. "
   },
   "theClanless:NimbleFeet": {

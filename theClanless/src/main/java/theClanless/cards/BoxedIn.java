@@ -41,8 +41,7 @@ public class BoxedIn extends AbstractDynamicCard {
     public static final CardColor COLOR = TheClanless.Enums.COLOR_CLANLESSRED;
 
     private static final int COST = 0;
-    private static final int MAGICNUMBER  = 1;
-    private static final int MAGICNUMBER_PLUS = 1;
+    private static final int MAGICNUMBER  = 2;
 
 
     // /STAT DECLARATION/
@@ -66,7 +65,7 @@ public class BoxedIn extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(MAGICNUMBER_PLUS);
+            this.exhaust = false;
             this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
