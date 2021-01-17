@@ -23,16 +23,6 @@
     "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable."
   },
-  "theClanless:ConsanguineousBoon": {
-    "NAME": "Consanguineous Boon",
-    "DESCRIPTION": "Gain !M! + theclanless:votes Dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain !M! + theclanless:votes Dexterity."
-  },
-  "theClanless:ConsanguineousCondemnation": {
-    "NAME": "Consanguineous Condemnation",
-    "DESCRIPTION": "Gain !M! + theclanless:votes Strength.",
-    "UPGRADE_DESCRIPTION": "Gain !M! + theclanless:votes Strength."
-  },
   "theClanless:Distraction": {
     "NAME": "Distraction",
     "DESCRIPTION": "Draw !M! cards. Discard 2.",
@@ -112,6 +102,11 @@
     "NAME": "Taste of Vitae",
     "DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust."
+  },
+  "theClanless:TornSignpost": {
+    "NAME": "Torn Signpost",
+    "DESCRIPTION": "Gain !M! strength. Lose !M! strength at the end of your turn. NL Innate.",
+    "UPGRADE_DESCRIPTION": "Gain !M! strength this turn. Keep 2 strength, lose the rest at the end of your turn. NL Innate. Exhaust."
   },
   "theClanless:ItsaTrap": {
     "NAME": "Trap!",
