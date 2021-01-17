@@ -34,6 +34,10 @@
                 "NAME": "Vote",
                 "DESCRIPTIONS": ["You have #b", "vote.", "votes."]
         },
+        "theClanless:WellAimedCarPower": {
+                "NAME": "Well Aimed Car",
+                "DESCRIPTIONS": ["MEEP MEEP!"]
+        },
 
 
 "theClanless:CommonPower": {

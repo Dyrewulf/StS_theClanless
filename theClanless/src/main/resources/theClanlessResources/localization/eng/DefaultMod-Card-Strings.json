@@ -98,10 +98,25 @@
     "DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy.",
     "UPGRADE_DESCRIPTION":  "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy."
   },
+  "theClanless:RapidHealing": {
+    "NAME": "Rapid Healing",
+    "DESCRIPTION": "Lose all regeneration. Gain !M! regeneration X times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":  "Lose all regeneration. Gain !M! regeneration X+1 times. NL Exhaust."
+  },
+  "theClanless:Restoration": {
+    "NAME": "Restoration",
+    "DESCRIPTION": "Gain 2 energy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":  "Gain 2 energy."
+  },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers each turn.",
     "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:maneuvers each turn."
+  },
+  "theClanless:SkinOfRock": {
+    "NAME": "Skin of Rock",
+    "DESCRIPTION": "Gain !B! block.",
+    "UPGRADE_DESCRIPTION":  "Gain !B! block twice."
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
@@ -123,6 +138,11 @@
     "DESCRIPTION": "Deal !D! damage.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage."
   },
+  "theClanless:UnflinchingPersistence": {
+    "NAME": "Unflinching Persistence",
+    "DESCRIPTION": "Gain !B! block. Increase the block of all Unflinching Persistence by !M!.",
+    "UPGRADE_DESCRIPTION": "Gain !B! block. Increase the block of all Unflinching Persistence by !M!."
+  },
   "theClanless:VampiricSpeed": {
     "NAME": "Vampiric Speed",
     "DESCRIPTION": "Gain !B! block. Consume 1 theclanless:maneuver to gain !M! block.",
@@ -131,7 +151,12 @@
   "theClanless:WakeWithEveningsFreshness": {
     "NAME": "Wake w/ Evening Freshness",
     "DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity"
+    "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity."
+  },
+  "theClanless:WellAimedCar": {
+    "NAME": "Well Aimed Car",
+    "DESCRIPTION": "Deal !D! damage at the end of next turn.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage at the end of next turn."
   },
   "theClanless:DefaultCommonAttack": {
     "NAME": "Strike",
