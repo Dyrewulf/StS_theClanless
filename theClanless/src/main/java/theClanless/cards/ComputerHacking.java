@@ -65,8 +65,6 @@ public class ComputerHacking extends CustomCard {
 
         this.damage = this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
-
-        this.tags.add(CardTags.STRIKE);
     }
 
     // Actions the card should do.

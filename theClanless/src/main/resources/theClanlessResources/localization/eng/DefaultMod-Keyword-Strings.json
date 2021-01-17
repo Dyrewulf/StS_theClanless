@@ -2,14 +2,18 @@
   {
     "NAMES": [
       "maneuver",
-      "maneuvers"
+      "maneuvers",
+      "Maneuver",
+      "Maneuver"
     ],
     "DESCRIPTION": "Reduces incoming damage. Celerity cards consume for effect."
   },
   {
     "NAMES": [
       "press",
-      "presses"
+      "presses",
+      "Press",
+      "Presses"
     ],
     "DESCRIPTION": "Increases Strength next turn. Potence cards consume for effect."
   },

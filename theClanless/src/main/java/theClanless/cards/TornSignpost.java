@@ -6,14 +6,15 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.LoseStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import theClanless.characters.TheClanless;
-import theClanless.powers.BloodhealPower;
 import theClanless.powers.PressPower;
 import theClanless.theClanlessMod;
 
 import static theClanless.theClanlessMod.makeCardPath;
 
-public class BoxedIn extends AbstractDynamicCard {
+public class TornSignpost extends AbstractDynamicCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -24,8 +25,8 @@ public class BoxedIn extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = theClanlessMod.makeID("BoxedIn");
-    public static final String IMG = makeCardPath("BoxedIn.png");
+    public static final String ID = theClanlessMod.makeID("TornSignpost");
+    public static final String IMG = makeCardPath("TornSignpost.png");
 
     // /TEXT DECLARATION/
 
@@ -42,22 +43,33 @@ public class BoxedIn extends AbstractDynamicCard {
 
     private static final int COST = 0;
     private static final int MAGICNUMBER  = 2;
+    private static final int MAGICNUMBER_PLUS = 2;
 
 
     // /STAT DECLARATION/
 
 
-    public BoxedIn() {
+    public TornSignpost() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
-
-        this.exhaust = true;
+        this.isInnate = true;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PressPower(p, p, magicNumber)));
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber), magicNumber)
+        );
+        if (!this.upgraded) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new ApplyPowerAction(p, p, new LoseStrengthPower(p, magicNumber), magicNumber)
+            );
+        } else {
+            AbstractDungeon.actionManager.addToBottom(
+                    new ApplyPowerAction(p, p, new LoseStrengthPower(p, magicNumber -2), magicNumber -2)
+            );
+        }
     }
 
     //Upgraded stats.
@@ -65,7 +77,8 @@ public class BoxedIn extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            this.exhaust = false;
+            this.exhaust = true;
+            upgradeMagicNumber(MAGICNUMBER_PLUS);
             this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

@@ -6,15 +6,14 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theClanless.actions.IncreasedStrengthAction;
 import theClanless.characters.TheClanless;
-import theClanless.powers.CommonPower;
-import theClanless.powers.PraxisPower;
-import theClanless.powers.VotePower;
+import theClanless.powers.InfernalPursuitPower;
 import theClanless.theClanlessMod;
 
 import static theClanless.theClanlessMod.makeCardPath;
 
-public class PraxisSeizure extends AbstractDynamicCard {
+public class IncreasedStrength extends AbstractDynamicCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -25,8 +24,8 @@ public class PraxisSeizure extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = theClanlessMod.makeID("PraxisSeizure");
-    public static final String IMG = makeCardPath("PraxisSeizure.png");
+    public static final String ID = theClanlessMod.makeID("IncreasedStrength");
+    public static final String IMG = makeCardPath("IncreasedStrength.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -37,14 +36,15 @@ public class PraxisSeizure extends AbstractDynamicCard {
 
     // STAT DECLARATION
 
+
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheClanless.Enums.COLOR_CLANLESSRED;
+    public static final CardColor COLOR = TheClanless.Enums.POTENCE;
 
-    private static final int COST = 1;
-    private static final int MAGIC = 1;
-    private static final int UPGRADE_MAGIC = 1;
+    private static final int COST = 2;
+    private static final int MAGIC = 2;
+    private static final int UPGRADE_MAGIC = 2;
 
     // Hey want a second magic/damage/block/unique number??? Great!
     // Go check out DefaultAttackWithVariable and theDefault.variable.DefaultCustomVariable
@@ -54,7 +54,7 @@ public class PraxisSeizure extends AbstractDynamicCard {
     // /STAT DECLARATION/
 
 
-    public PraxisSeizure() {
+    public IncreasedStrength() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.magicNumber = this.baseMagicNumber = MAGIC;
     }
@@ -63,8 +63,9 @@ public class PraxisSeizure extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p,
-                new PraxisPower(p, p, magicNumber), magicNumber));
+        AbstractDungeon.actionManager.addToBottom(
+                new IncreasedStrengthAction(p, magicNumber)
+        );
     }
 
     //Upgraded stats.
@@ -73,7 +74,6 @@ public class PraxisSeizure extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(UPGRADE_MAGIC);
-            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

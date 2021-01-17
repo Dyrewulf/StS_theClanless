@@ -6,13 +6,12 @@
   },
   "theClanless:Blur": {
     "NAME": "Blur",
-    "DESCRIPTION": "Deal !D! damage !M! times.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times."
+    "DESCRIPTION": "Deal !D! damage !M! times."
   },
   "theClanless:BoxedIn": {
     "NAME": "Boxed In",
     "DESCRIPTION": "Gain !M! theclanless:press. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:press. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:press."
   },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
@@ -37,47 +36,67 @@
   "theClanless:FakeOut": {
     "NAME": "Fake Out",
     "DESCRIPTION": "Gain !M! theclanless:maneuver. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuver. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuver."
   },
   "theClanless:FastHands": {
     "NAME": "Fast Hands",
     "DESCRIPTION": "Retrieve a card from your discard pile and reduce it's cost by !M! . NL The retrieved card Exhausts.",
     "UPGRADE_DESCRIPTION": "Retrieve a card from your discard pile and reduce it's cost by !M! . NL The retrieved card Exhausts."
   },
+  "theClanless:FistsOfDeath": {
+    "NAME": "Fists of Death",
+    "DESCRIPTION": "Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Strength."
+  },
   "theClanless:Flash": {
     "NAME": "Flash",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card."
+  },
+  "theClanless:GrowingFury": {
+    "NAME": "Growing Fury",
+    "DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!"
+  },
+  "theClanless:IncreasedStrength": {
+    "NAME": "Increased Strength",
+    "DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat.",
+    "UPGRADE_DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat."
   },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
     "DESCRIPTION": "Whenever you play a card, draw a card.",
     "UPGRADE_DESCRIPTION": "Whenever you play a card, draw !M! cards."
   },
-  "theClanless:KineResourcesContested": {
-    "NAME": "Kine Resources Contested",
-    "DESCRIPTION": "Consume Votes, deal !D! damage per vote.",
-    "UPGRADE_DESCRIPTION": "Consume Votes, deal !D! damage per vote."
+  "theClanless:ImmortalGrapple": {
+    "NAME": "Immortal Grapple",
+    "DESCRIPTION": "Deal !D! damage. Consume theclanless:presses to apply Constricted equal to !M! + consumed presses. Otherwise, gain !M! presses.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume theclanless:presses to apply Constricted equal to !M! + consumed presses. Otherwise, gain !M! presses."
   },
   "theClanless:LuckyBlow": {
     "NAME": "Lucky Blow",
     "DESCRIPTION": "Deal !D! damage.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust. "
   },
+  "theClanless:MightyGrapple": {
+    "NAME": "Mighty Grapple",
+    "DESCRIPTION": "Deal !D! damage and gain !M! theclanless:press.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and gain !M! theclanless:press."
+  },
   "theClanless:NimbleFeet": {
     "NAME": "Nimble Feet",
     "DESCRIPTION": "Your next Skill is played twice.",
     "UPGRADE_DESCRIPTION": "Your next skill and next attack are played twice."
   },
-  "theClanless:PraxisSeizure": {
-    "NAME": "Praxis Seizure",
-    "DESCRIPTION": "Gain !M! vote each turn.",
-    "UPGRADE_DESCRIPTION": "Gain !M! votes each turn."
-  },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers.",
     "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
+  },
+  "theClanless:PulledFangs": {
+    "NAME": "Pulled Fangs",
+    "DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy.",
+    "UPGRADE_DESCRIPTION":  "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy."
   },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
@@ -86,16 +105,34 @@
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
-    "DESCRIPTION": "Gain !M! Bloodheal. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! Bloodheal. NL Exhaust."
+    "DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust."
+  },
+  "theClanless:TornSignpost": {
+    "NAME": "Torn Signpost",
+    "DESCRIPTION": "Gain !M! strength. Lose !M! strength at the end of your turn. NL Innate.",
+    "UPGRADE_DESCRIPTION": "Gain !M! strength this turn. Keep 2 strength, lose the rest at the end of your turn. NL Innate. Exhaust."
+  },
+  "theClanless:ItsaTrap": {
+    "NAME": "Trap!",
+    "DESCRIPTION": "Whenever you gain a theclanless:press, gain another press.",
+    "UPGRADE_DESCRIPTION": "Whenever you gain a theclanless:press, gain another press."
+  },
+  "theClanless:UndeadStrength": {
+    "NAME": "Undead Strength",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage."
   },
   "theClanless:VampiricSpeed": {
     "NAME": "Vampiric Speed",
     "DESCRIPTION": "Gain !B! block. Consume 1 theclanless:maneuver to gain !M! block.",
     "UPGRADE_DESCRIPTION": "Gain !B! block. Consume up to 2 theclanless:maneuvers to gain !M! block each."
   },
-
-
+  "theClanless:WakeWithEveningsFreshness": {
+    "NAME": "Wake w/ Evening Freshness",
+    "DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity"
+  },
   "theClanless:DefaultCommonAttack": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
@@ -141,7 +178,7 @@
   },
   "theClanless:DefaultSecondMagicNumberSkill": {
     "NAME": "Cool 2 Number Card",
-    "DESCRIPTION": "Apply !M! Vulnerable and !theClanless:SM! poison to an enemy."
+    "DESCRIPTION": "Apply !M! Vulnerable and !theclanless:SM! poison to an enemy."
   },
   "theClanless:OrbSkill": {
     "NAME": "Get Orb",
