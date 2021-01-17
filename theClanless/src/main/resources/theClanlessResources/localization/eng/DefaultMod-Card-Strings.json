@@ -118,6 +118,11 @@
     "DESCRIPTION": "Whenever you gain a theclanless:press, gain another press.",
     "UPGRADE_DESCRIPTION": "Whenever you gain a theclanless:press, gain another press."
   },
+  "theClanless:UndeadStrength": {
+    "NAME": "Undead Strength",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage."
+  },
   "theClanless:VampiricSpeed": {
     "NAME": "Vampiric Speed",
     "DESCRIPTION": "Gain !B! block. Consume 1 theclanless:maneuver to gain !M! block.",
