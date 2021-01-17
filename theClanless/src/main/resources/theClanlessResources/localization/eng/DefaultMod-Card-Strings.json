@@ -103,6 +103,11 @@
     "DESCRIPTION": "Lose all regeneration. Gain !M! regeneration X times. NL Exhaust.",
     "UPGRADE_DESCRIPTION":  "Lose all regeneration. Gain !M! regeneration X+1 times. NL Exhaust."
   },
+  "theClanless:Restoration": {
+    "NAME": "Restoration",
+    "DESCRIPTION": "Gain 2 energy. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":  "Gain 2 energy."
+  },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
     "DESCRIPTION": "Gain !M! theclanless:Maneuvers each turn.",
@@ -146,7 +151,12 @@
   "theClanless:WakeWithEveningsFreshness": {
     "NAME": "Wake w/ Evening Freshness",
     "DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity.",
-    "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity"
+    "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity."
+  },
+  "theClanless:WellAimedCar": {
+    "NAME": "Well Aimed Car",
+    "DESCRIPTION": "Deal !D! damage at the end of next turn.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage at the end of next turn."
   },
   "theClanless:DefaultCommonAttack": {
     "NAME": "Strike",
