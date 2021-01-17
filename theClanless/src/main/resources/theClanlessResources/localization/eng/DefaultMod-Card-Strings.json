@@ -80,8 +80,8 @@
   },
   "theClanless:MightyGrapple": {
     "NAME": "Mighty Grapple",
-    "DESCRIPTION": "Deal !D! damage and apply !M! press.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust. "
+    "DESCRIPTION": "Deal !D! damage and gain !M! theclanless:press.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and gain !M! theclanless:press."
   },
   "theClanless:NimbleFeet": {
     "NAME": "Nimble Feet",
@@ -92,6 +92,11 @@
     "NAME": "Psyche!",
     "DESCRIPTION": "Gain !M! theclanless:Maneuvers.",
     "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:Maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
+  },
+  "theClanless:PulledFangs": {
+    "NAME": "Pulled Fangs",
+    "DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy.",
+    "UPGRADE_DESCRIPTION":  "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy."
   },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
@@ -122,6 +127,11 @@
     "NAME": "Vampiric Speed",
     "DESCRIPTION": "Gain !B! block. Consume 1 theclanless:maneuver to gain !M! block.",
     "UPGRADE_DESCRIPTION": "Gain !B! block. Consume up to 2 theclanless:maneuvers to gain !M! block each."
+  },
+  "theClanless:WakeWithEveningsFreshness": {
+    "NAME": "Wake w/ Evening Freshness",
+    "DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity.",
+    "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity"
   },
   "theClanless:DefaultCommonAttack": {
     "NAME": "Strike",
