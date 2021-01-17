@@ -10,8 +10,8 @@
   },
   "theClanless:BoxedIn": {
     "NAME": "Boxed In",
-    "DESCRIPTION": "Gain !M! theclanless:Press. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Press."
+    "DESCRIPTION": "Gain !M! theclanless:press. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:press."
   },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
@@ -35,8 +35,8 @@
   },
   "theClanless:FakeOut": {
     "NAME": "Fake Out",
-    "DESCRIPTION": "Gain !M! theclanless:Maneuver. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Maneuver."
+    "DESCRIPTION": "Gain !M! theclanless:maneuver. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuver."
   },
   "theClanless:FastHands": {
     "NAME": "Fast Hands",
@@ -90,8 +90,8 @@
   },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
-    "DESCRIPTION": "Gain !M! theclanless:Maneuvers.",
-    "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:Maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
+    "DESCRIPTION": "Gain !M! theclanless:maneuvers.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
   },
   "theClanless:PulledFangs": {
     "NAME": "Pulled Fangs",
@@ -100,8 +100,8 @@
   },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
-    "DESCRIPTION": "Gain !M! theclanless:Maneuvers each turn.",
-    "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:Maneuvers each turn."
+    "DESCRIPTION": "Gain !M! theclanless:maneuvers each turn.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! theclanless:maneuvers each turn."
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
@@ -143,8 +143,8 @@
   },
   "theClanless:DefaultCommonPower": {
     "NAME": "Hold Place",
-    "DESCRIPTION": "Gain !M! theclanless:Keyword.",
-    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Keywords."
+    "DESCRIPTION": "Gain !M! theclanless:keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:keywords."
   },
   "theClanless:DefaultUncommonAttack": {
     "NAME": "Big slap",
@@ -157,7 +157,7 @@
   "theClanless:DefaultUncommonPower": {
     "NAME": "Weirdness",
     "DESCRIPTION": "Gain X theclanless:Keywords.",
-    "UPGRADE_DESCRIPTION": "Gain X +1 theclanless:Keywords."
+    "UPGRADE_DESCRIPTION": "Gain X +1 theclanless:keywords."
   },
   "theClanless:DefaultRareAttack": {
     "NAME": "TOUCH",
@@ -174,7 +174,7 @@
   },
   "theClanless:DefaultAttackWithVariable": {
     "NAME": "Special Strike",
-    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !theclanless:ENERGY_DAMAGE! damage total.)"
+    "DESCRIPTION": "Deal !D! damage [E] times. NL (Deal !theClanless:ENERGY_DAMAGE! damage total.)"
   },
   "theClanless:DefaultSecondMagicNumberSkill": {
     "NAME": "Cool 2 Number Card",
