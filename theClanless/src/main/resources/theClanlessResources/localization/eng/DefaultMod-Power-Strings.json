@@ -26,8 +26,8 @@
                 "NAME": "Transient Buffer",
                 "DESCRIPTIONS": ["A buffer that disappears at turn start."]
         },
-        "theClanless:TrapPower": {
-                "NAME": "Alfonso was here.",
+        "theClanless:ItsaTrapPower": {
+                "NAME": "It's a Trap!",
                 "DESCRIPTIONS": ["Whenever a Press is gained, gain another Press."]
         },
         "theClanless:VotePower": {
