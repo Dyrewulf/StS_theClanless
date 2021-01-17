@@ -68,10 +68,20 @@
     "DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!"
   },
+  "theClanless:IncreasedStrength": {
+    "NAME": "Increased Strength",
+    "DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat.",
+    "UPGRADE_DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat."
+  },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
     "DESCRIPTION": "Whenever you play a card, draw a card.",
     "UPGRADE_DESCRIPTION": "Whenever you play a card, draw !M! cards."
+  },
+  "theClanless:ImmortalGrapple": {
+    "NAME": "Immortal Grapple",
+    "DESCRIPTION": "Deal !D! damage. Consume theclanless:presses to apply Constricted equal to !M! + consumed presses. Otherwise, gain !M! presses.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume theclanless:presses to apply Constricted equal to !M! + consumed presses. Otherwise, gain !M! presses."
   },
   "theClanless:LuckyBlow": {
     "NAME": "Lucky Blow",
