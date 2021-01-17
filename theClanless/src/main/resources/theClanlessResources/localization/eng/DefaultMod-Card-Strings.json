@@ -98,6 +98,11 @@
     "DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy.",
     "UPGRADE_DESCRIPTION":  "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy."
   },
+  "theClanless:RapidHealing": {
+    "NAME": "Rapid Healing",
+    "DESCRIPTION": "Lose all regeneration. Gain !M! regeneration X times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":  "Lose all regeneration. Gain !M! regeneration X+1 times. NL Exhaust."
+  },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
     "DESCRIPTION": "Gain !M! theclanless:Maneuvers each turn.",
