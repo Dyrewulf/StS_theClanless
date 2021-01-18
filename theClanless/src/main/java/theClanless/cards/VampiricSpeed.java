@@ -1,7 +1,6 @@
 package theClanless.cards;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -56,7 +55,7 @@ public class VampiricSpeed extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.block = this.baseBlock = BLOCK;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
-        this.defaultBaseSecondMagicNumber = SECONDMAGICNUMBER;
+        this.baseClanlessSecondMagicNumber = SECONDMAGICNUMBER;
 
     }
 

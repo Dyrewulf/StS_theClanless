@@ -123,6 +123,11 @@
     "DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust."
   },
+  "theClanless:ThrownGate": {
+    "NAME": "Thrown Gate",
+    "DESCRIPTION": "Deal !D! damage. Consume a theclanless:maneuver to increase the damage by !theClanless:csmn!.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:maneuver to increase the damage by !theClanless:csmn!."
+  },
   "theClanless:TornSignpost": {
     "NAME": "Torn Signpost",
     "DESCRIPTION": "Gain !M! strength. Lose !M! strength at the end of your turn. NL Innate.",
@@ -203,7 +208,7 @@
   },
   "theClanless:DefaultSecondMagicNumberSkill": {
     "NAME": "Cool 2 Number Card",
-    "DESCRIPTION": "Apply !M! Vulnerable and !theclanless:SM! poison to an enemy."
+    "DESCRIPTION": "Apply !M! Vulnerable and !theClanless:csmn! poison to an enemy."
   },
   "theClanless:OrbSkill": {
     "NAME": "Get Orb",
