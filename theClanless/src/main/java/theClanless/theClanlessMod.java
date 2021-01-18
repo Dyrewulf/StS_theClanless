@@ -28,7 +28,7 @@ import theClanless.relics.*;
 import theClanless.util.IDCheckDontTouchPls;
 import theClanless.util.TextureLoader;
 import theClanless.variables.DefaultCustomVariable;
-import theClanless.variables.DefaultSecondMagicNumber;
+import theClanless.variables.ClanlessSecondMagicNumber;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -474,7 +474,7 @@ public class theClanlessMod implements
         logger.info("Add variables");
         // Add the Custom Dynamic variables
         BaseMod.addDynamicVariable(new DefaultCustomVariable());
-        BaseMod.addDynamicVariable(new DefaultSecondMagicNumber());
+        BaseMod.addDynamicVariable(new ClanlessSecondMagicNumber());
         
         logger.info("Adding cards");
         // Add the cards
@@ -491,7 +491,7 @@ public class theClanlessMod implements
         //TODO: Rename the "DefaultMod" with the modid in your ModTheSpire.json file
         //TODO: The artifact mentioned in ModTheSpire.json is the artifactId in pom.xml you should've edited earlier
         new AutoAdd("theClanless") // ${project.artifactId}
-            .packageFilter(AbstractDefaultCard.class) // filters to any class in the same package as AbstractDefaultCard, nested packages included
+            .packageFilter(AbstractClanlessCard.class) // filters to any class in the same package as AbstractDefaultCard, nested packages included
             .setDefaultSeen(true)
             .cards();
 
