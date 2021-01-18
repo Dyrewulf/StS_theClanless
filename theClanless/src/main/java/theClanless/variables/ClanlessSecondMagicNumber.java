@@ -2,17 +2,17 @@ package theClanless.variables;
 
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import theClanless.cards.AbstractDefaultCard;
+import theClanless.cards.AbstractClanlessCard;
 
 import static theClanless.theClanlessMod.makeID;
 
-public class DefaultSecondMagicNumber extends DynamicVariable {
+public class ClanlessSecondMagicNumber extends DynamicVariable {
 
     //For in-depth comments, check the other variable(DefaultCustomVariable). It's nearly identical.
 
     @Override
     public String key() {
-        return makeID("SM");
+        return makeID("csmn");
         // This is what you put between "!!" in your card strings to actually display the number.
         // You can name this anything (no spaces), but please pre-phase it with your mod name as otherwise mod conflicts can occur.
         // Remember, we're using makeID so it automatically puts "theDefault:" (or, your id) before the name.
@@ -20,22 +20,22 @@ public class DefaultSecondMagicNumber extends DynamicVariable {
 
     @Override
     public boolean isModified(AbstractCard card) {
-        return ((AbstractDefaultCard) card).isDefaultSecondMagicNumberModified;
+        return ((AbstractClanlessCard) card).isClanlessSecondMagicNumberModified;
 
     }
 
     @Override
     public int value(AbstractCard card) {
-        return ((AbstractDefaultCard) card).defaultSecondMagicNumber;
+        return ((AbstractClanlessCard) card).clanlessSecondMagicNumber;
     }
 
     @Override
     public int baseValue(AbstractCard card) {
-        return ((AbstractDefaultCard) card).defaultBaseSecondMagicNumber;
+        return ((AbstractClanlessCard) card).baseClanlessSecondMagicNumber;
     }
 
     @Override
     public boolean upgraded(AbstractCard card) {
-        return ((AbstractDefaultCard) card).upgradedDefaultSecondMagicNumber;
+        return ((AbstractClanlessCard) card).upgradedClanlessSecondMagicNumber;
     }
 }
