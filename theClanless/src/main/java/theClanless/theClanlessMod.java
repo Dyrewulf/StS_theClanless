@@ -151,11 +151,11 @@ public class theClanlessMod implements
     private static final String POWER_POTENCE_PORTRAIT = IMAGES1024 + "bg_power_potence.png";
     
     // Character assets
-    private static final String THE_DEFAULT_BUTTON = "theClanlessResources/images/charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "theClanlessResources/images/charSelect/DefaultCharacterPortraitBG.png";
-    public static final String THE_DEFAULT_SHOULDER_1 = "theClanlessResources/images/char/defaultCharacter/shoulder.png";
-    public static final String THE_DEFAULT_SHOULDER_2 = "theClanlessResources/images/char/defaultCharacter/shoulder2.png";
-    public static final String THE_DEFAULT_CORPSE = "theClanlessResources/images/char/defaultCharacter/corpse.png";
+    private static final String THE_CLANLESS_BUTTON = "theClanlessResources/images/charSelect/ClanlessCharacterButton.png";
+    private static final String THE_DEFAULT_PORTRAIT = "theClanlessResources/images/charSelect/ClanlessCharacterPortraitBG.png";
+    public static final String THE_CLANLESS_SHOULDER_1 = "theClanlessResources/images/char/clanlessCharacter/shoulder.png";
+    public static final String THE_CLANLESS_SHOULDER_2 = "theClanlessResources/images/char/clanlessCharacter/shoulder2.png";
+    public static final String THE_CLANLESS_CORPSE = "theClanlessResources/images/char/defaultCharacter/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "theClanlessResources/images/Badge.png";
@@ -337,7 +337,7 @@ public class theClanlessMod implements
         logger.info("Beginning to edit characters. " + "Add " + TheClanless.Enums.THE_CLANLESS.toString());
         
         BaseMod.addCharacter(new TheClanless("the Clanless", TheClanless.Enums.THE_CLANLESS),
-                THE_DEFAULT_BUTTON, THE_DEFAULT_PORTRAIT, TheClanless.Enums.THE_CLANLESS);
+                THE_CLANLESS_BUTTON, THE_DEFAULT_PORTRAIT, TheClanless.Enums.THE_CLANLESS);
         
         receiveEditPotions();
         logger.info("Added " + TheClanless.Enums.THE_CLANLESS.toString());
