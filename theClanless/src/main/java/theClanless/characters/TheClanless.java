@@ -33,7 +33,6 @@ import java.util.Iterator;
 import java.util.Map;
 
 import static theClanless.characters.TheClanless.Enums.*;
-import static theClanless.relics.CelerityRelic.*;
 import static theClanless.theClanlessMod.*;
 
 //Wiki-page https://github.com/daviscook477/BaseMod/wiki/Custom-Characters
@@ -123,16 +122,16 @@ public class TheClanless extends CustomPlayer {
         super(name, setClass, orbTextures,
                 "theClanlessResources/images/char/defaultCharacter/orb/vfx.png", null,
                 new SpriterAnimation(
-                        "theClanlessResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                        "theClanlessResources/images/char/clanlessCharacter/Spriter/theClanlessAnimation.scml"));
 
 
         // =============== TEXTURES, ENERGY, LOADOUT =================  
 
         initializeClass(null, // required call to load textures and setup energy/loadout.
                 // I left these in DefaultMod.java (Ctrl+click them to see where they are, Ctrl+hover to see what they read.)
-                THE_DEFAULT_SHOULDER_2, // campfire pose
-                THE_DEFAULT_SHOULDER_1, // another campfire pose
-                THE_DEFAULT_CORPSE, // dead corpse
+                THE_CLANLESS_SHOULDER_2, // campfire pose
+                THE_CLANLESS_SHOULDER_1, // another campfire pose
+                THE_CLANLESS_CORPSE, // dead corpse
                 getLoadout(), 20.0F, -10.0F, 220.0F, 290.0F, new EnergyManager(ENERGY_PER_TURN)); // energy manager
 
         // =============== /TEXTURES, ENERGY, LOADOUT/ =================
