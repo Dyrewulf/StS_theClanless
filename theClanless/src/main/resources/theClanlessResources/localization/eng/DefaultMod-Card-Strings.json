@@ -130,8 +130,13 @@
   },
   "theClanless:ThrownGate": {
     "NAME": "Thrown Gate",
-    "DESCRIPTION": "Deal !D! damage. Consume a theclanless:maneuver to increase the damage by !theClanless:csmn!.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:maneuver to increase the damage by !theClanless:csmn!."
+    "DESCRIPTION": "Deal !D! damage. Consume a theclanless:maneuver to increase damage and remove thorns by !M!.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:maneuver to increase damage and remove thorns by !M!."
+  },
+  "theClanless:ThrownSewerLid": {
+    "NAME": "Thrown Sewer Lid",
+    "DESCRIPTION": "Deal !D! damage. Consume a theclanless:maneuver to increase damage and remove thorns by !M!.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:maneuver to increase damage and remove thorns by !M!."
   },
   "theClanless:TornSignpost": {
     "NAME": "Torn Signpost",

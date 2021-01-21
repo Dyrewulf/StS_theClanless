@@ -26,8 +26,8 @@ public class RangedAttackAction extends AbstractGameAction {
         this.shooter = p;
         this.target = m;
         this.pewpew = damage;
-        this.clipSize = magicNumber;
-        this.bullet = clanlessSecondMagicNumber;
+        this.bullet = magicNumber;
+        this.clipSize = clanlessSecondMagicNumber;
         this.packing = damageTypeForTurn;
     }
 
@@ -35,18 +35,15 @@ public class RangedAttackAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        if (target.hasPower(ThornsPower.POWER_ID)) {
-            int reduceThorn = clipSize;
-            do {
-                --reduceThorn;
-                AbstractDungeon.actionManager.addToBottom(
-                        new ReducePowerAction(target, shooter, ThornsPower.POWER_ID, 1)
-                );
-            } while (reduceThorn > 0);
-        }
-
         if (shooter.hasPower(ManeuverPower.POWER_ID)) {
             this.pewpew += bullet;
+
+            if (target.hasPower(ThornsPower.POWER_ID)) {
+                AbstractDungeon.actionManager.addToBottom(
+                        new ReducePowerAction(target, shooter, ThornsPower.POWER_ID, bullet)
+                );
+            }
+
             AbstractDungeon.actionManager.addToBottom(
                     new ReducePowerAction(shooter, shooter, ManeuverPower.POWER_ID, 1)
             );
