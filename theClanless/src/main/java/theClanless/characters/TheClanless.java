@@ -267,10 +267,10 @@ public class TheClanless extends CustomPlayer {
         //AbstractCard.CardColor color = this.getCardColor();
         ArrayList<AbstractCard.CardColor> disciplineColors = getDisciplineColors();
 
-        Iterator var3 = CardLibrary.cards.entrySet().iterator();
+        Iterator<Map.Entry<String, AbstractCard>> var3 = CardLibrary.cards.entrySet().iterator();
 
         while(var3.hasNext()) {
-            Map.Entry<String, AbstractCard> c = (Map.Entry<String, AbstractCard>) var3.next();
+            Map.Entry<String, AbstractCard> c = var3.next();
             AbstractCard card = c.getValue();
 
             if (disciplineColorCheck(disciplineColors, card.color) &&
