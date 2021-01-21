@@ -118,6 +118,11 @@
     "DESCRIPTION": "Gain !B! block.",
     "UPGRADE_DESCRIPTION":  "Gain !B! block twice."
   },
+  "theClanless:SkinOfSteel": {
+    "NAME": "Skin of Steel",
+    "DESCRIPTION": "Gain block equal to target monster's damage.",
+    "UPGRADE_DESCRIPTION":  "Gain black equal to all monster's damage."
+  },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
     "DESCRIPTION": "Gain !M! theclanless:Bloodheal. NL Exhaust.",
