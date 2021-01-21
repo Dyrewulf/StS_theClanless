@@ -36,19 +36,19 @@ public class FastHandsDiscardToHand extends BetterDiscardPileToHandAction {
         if (this.duration == this.startDuration) {
             if (!this.player.discardPile.isEmpty() && this.numberOfCards > 0) {
                 if (this.player.discardPile.size() <= this.numberOfCards && !this.optional) {
-                    ArrayList<AbstractCard> cardsToMove = new ArrayList();
-                    Iterator var5 = this.player.discardPile.group.iterator();
+                    ArrayList<AbstractCard> cardsToMove = new ArrayList<>();
+                    Iterator<AbstractCard> var5 = this.player.discardPile.group.iterator();
 
                     AbstractCard c;
                     while(var5.hasNext()) {
-                        c = (AbstractCard)var5.next();
+                        c = var5.next();
                         cardsToMove.add(c);
                     }
 
                     var5 = cardsToMove.iterator();
 
                     while(var5.hasNext()) {
-                        c = (AbstractCard)var5.next();
+                        c = var5.next();
                         if (this.player.hand.size() < 10) {
                             this.player.hand.addToHand(c);
                             if (this.setCost) {
@@ -83,13 +83,13 @@ public class FastHandsDiscardToHand extends BetterDiscardPileToHandAction {
                 this.isDone = true;
             }
         } else {
-            Iterator var1;
+            Iterator<AbstractCard> var1;
             AbstractCard c;
             if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
                 var1 = AbstractDungeon.gridSelectScreen.selectedCards.iterator();
 
                 while(var1.hasNext()) {
-                    c = (AbstractCard)var1.next();
+                    c = var1.next();
                     if (this.player.hand.size() < 10) {
                         this.player.hand.addToHand(c);
                         if (this.setCost) {
@@ -106,7 +106,7 @@ public class FastHandsDiscardToHand extends BetterDiscardPileToHandAction {
                 }
 
                 for(var1 = this.player.discardPile.group.iterator(); var1.hasNext(); c.target_y = 0.0F) {
-                    c = (AbstractCard)var1.next();
+                    c = var1.next();
                     c.unhover();
                     c.target_x = (float) CardGroup.DISCARD_PILE_X;
                 }
@@ -120,7 +120,7 @@ public class FastHandsDiscardToHand extends BetterDiscardPileToHandAction {
                 var1 = this.player.hand.group.iterator();
 
                 while(var1.hasNext()) {
-                    c = (AbstractCard)var1.next();
+                    c = var1.next();
                     c.applyPowers();
                 }
             }
