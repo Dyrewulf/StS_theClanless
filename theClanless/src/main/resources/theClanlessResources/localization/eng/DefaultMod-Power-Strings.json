@@ -1,51 +1,75 @@
-{       "theClanless:BloodhealPower": {
-                "NAME": "Bloodheal",
-                "DESCRIPTIONS": ["Your next #b", " attack restores HP and exhausts", " attacks restores HP and exhausts."]
-        },
-        "theClanless:InfernalPursuitPower": {
-                "NAME": "Infernal Pursuit",
-                "DESCRIPTIONS": ["Whenever you play a card, draw #b", " card", " cards"]
-        },
-        "theClanless:ManeuverPower": {
-                "NAME": "Maneuver",
-                "DESCRIPTIONS": ["Reduce damage by #b"]
-        },
-        "theClanless:PressPower": {
-                "NAME": "Press",
-                "DESCRIPTIONS": ["Next turn gain #b", " Strength"]
-        },
-        "theClanless:PraxisPower": {
-                "NAME": "Prince of the Spire",
-                "DESCRIPTIONS": ["You gain #b", "vote each turn.", "votes each turn."]
-        },
-        "theClanless:SideslipPower": {
-                "NAME": "Sideslip",
-                "DESCRIPTIONS": ["Gain #b", " maneuver", " maneuvers", "each turn."]
-        },
-        "theClanless:TempBufferPower": {
-                "NAME": "Transient Buffer",
-                "DESCRIPTIONS": ["A buffer that disappears at turn start."]
-        },
-        "theClanless:ItsaTrapPower": {
-                "NAME": "It's a Trap!",
-                "DESCRIPTIONS": ["Whenever a Press is gained, gain another Press."]
-        },
-        "theClanless:VotePower": {
-                "NAME": "Vote",
-                "DESCRIPTIONS": ["You have #b", "vote.", "votes."]
-        },
-        "theClanless:WellAimedCarPower": {
-                "NAME": "Well Aimed Car",
-                "DESCRIPTIONS": ["MEEP MEEP!"]
-        },
+{
+  "theClanless:BloodhealPower": {
+    "NAME": "Bloodheal",
+    "DESCRIPTIONS": [
+      "Your next #b",
+      " attack restores HP and exhausts",
+      " attacks restores HP and exhausts."
+    ]
+  },
+  "theClanless:InfernalPursuitPower": {
+    "NAME": "Infernal Pursuit",
+    "DESCRIPTIONS": [
+      "Whenever you play a card, draw #b",
+      " card",
+      " cards"
+    ]
+  },
+  "theClanless:ManeuverPower": {
+    "NAME": "Maneuver",
+    "DESCRIPTIONS": [
+      "Reduce damage by #b"
+    ]
+  },
+  "theClanless:PressPower": {
+    "NAME": "Press",
+    "DESCRIPTIONS": [
+      "Next turn gain #b",
+      " Strength"
+    ]
+  },
+  "theClanless:PraxisPower": {
+    "NAME": "Prince of the Spire",
+    "DESCRIPTIONS": [
+      "You gain #b",
+      "vote each turn.",
+      "votes each turn."
+    ]
+  },
+  "theClanless:SideslipPower": {
+    "NAME": "Sideslip",
+    "DESCRIPTIONS": [
+      "Gain #b",
+      " maneuver",
+      " maneuvers",
+      "each turn."
+    ]
+  },
 
-
-"theClanless:CommonPower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
-},
-"theClanless:RarePower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
-}
+  "theClanless:TempBufferPower": {
+    "NAME": "Transient Buffer",
+    "DESCRIPTIONS": [
+      "A buffer that disappears at turn start."
+    ]
+  },
+  "theClanless:ItsaTrapPower": {
+    "NAME": "It's a Trap!",
+    "DESCRIPTIONS": [
+      "Whenever a Press is gained, gain another Press."
+    ]
+  },
+  "theClanless:VotePower": {
+    "NAME": "Vote",
+    "DESCRIPTIONS": [
+      "You have #b",
+      "vote.",
+      "votes."
+    ]
+  },
+  "theClanless:WellAimedCarPower": {
+    "NAME": "Well Aimed Car",
+    "DESCRIPTIONS": [
+      "MEEP MEEP!"
+    ]
+  }
 }
