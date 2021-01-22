@@ -108,6 +108,11 @@
     "DESCRIPTION": "Gain 2 energy. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain 2 energy."
   },
+  "theClanless:ShatteringBlow": {
+    "NAME": "Shattering Blow",
+    "DESCRIPTION": "Deal !D! damage. Deals double damage against block.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals double damage against block."
+  },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers each turn.",
@@ -150,8 +155,8 @@
   },
   "theClanless:UndeadPersistence": {
     "NAME": "Undead Persistence",
-    "DESCRIPTION": "When you would die, prevent death and gain 1 HP and !M! intangible.",
-    "UPGRADE_DESCRIPTION": "When you would die, prevent death and gain 1 HP and !M! intangible."
+    "DESCRIPTION": "When you would die, gain !M! intangible.",
+    "UPGRADE_DESCRIPTION": "When you would die, gain !M! intangible."
   },
   "theClanless:UndeadStrength": {
     "NAME": "Undead Strength",
