@@ -432,29 +432,14 @@ public class theClanlessMod implements
     public void receiveEditRelics() {
         logger.info("Adding relics");
 
-        // Take a look at https://github.com/daviscook477/BaseMod/wiki/AutoAdd
-        // as well as
-        // https://github.com/kiooeht/Bard/blob/e023c4089cc347c60331c78c6415f489d19b6eb9/src/main/java/com/evacipated/cardcrawl/mod/bard/BardMod.java#L319
-        // for reference as to how to turn this into an "Auto-Add" rather than having to list every relic individually.
-        // Of note is that the bard mod uses it's own custom relic class (not dissimilar to our AbstractDefaultCard class for cards) that adds the 'color' field,
-        // in order to automatically differentiate which pool to add the relic too.
-
         // This adds a character specific relic. Only when you play with the mentioned color, will you get this relic.
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheClanless.Enums.COLOR_CLANLESSRED);
-        BaseMod.addRelicToCustomPool(new BottledPlaceholderRelic(), TheClanless.Enums.COLOR_CLANLESSRED);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheClanless.Enums.COLOR_CLANLESSRED);
-
         BaseMod.addRelicToCustomPool(new CelerityRelic(), TheClanless.Enums.COLOR_CLANLESSRED);
         BaseMod.addRelicToCustomPool(new PotenceRelic(), TheClanless.Enums.COLOR_CLANLESSRED);
         BaseMod.addRelicToCustomPool(new FortitudeRelic(), TheClanless.Enums.COLOR_CLANLESSRED);
         
-        // This adds a relic to the Shared pool. Every character can find this relic.
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
-        
         // Mark relics as seen - makes it visible in the compendium immediately
         // If you don't have this it won't be visible in the compendium until you see them in game
         // (the others are all starters so they're marked as seen in the character file)
-        UnlockTracker.markRelicAsSeen(BottledPlaceholderRelic.ID);
         UnlockTracker.markRelicAsSeen(CelerityRelic.ID);
 
         logger.info("Done adding relics!");
@@ -509,7 +494,6 @@ public class theClanlessMod implements
     
     @Override
     public void receiveEditStrings() {
-        logger.info("You seeing this?");
         logger.info("Beginning to edit strings for mod with ID: " + getModID());
         
         // CardStrings
@@ -540,7 +524,7 @@ public class theClanlessMod implements
         BaseMod.loadCustomStringsFile(OrbStrings.class,
                 getModID() + "Resources/localization/eng/DefaultMod-Orb-Strings.json");
         
-        logger.info("Done edittting strings");
+        logger.info("Done editing strings");
     }
     
     // ================ /LOAD THE TEXT/ ===================
