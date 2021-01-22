@@ -155,7 +155,7 @@ public class theClanlessMod implements
     private static final String THE_DEFAULT_PORTRAIT = "theClanlessResources/images/charSelect/ClanlessCharacterPortraitBG.png";
     public static final String THE_CLANLESS_SHOULDER_1 = "theClanlessResources/images/char/clanlessCharacter/shoulder.png";
     public static final String THE_CLANLESS_SHOULDER_2 = "theClanlessResources/images/char/clanlessCharacter/shoulder2.png";
-    public static final String THE_CLANLESS_CORPSE = "theClanlessResources/images/char/defaultCharacter/corpse.png";
+    public static final String THE_CLANLESS_CORPSE = "theClanlessResources/images/char/clanlessCharacter/corpse.png";
     
     //Mod Badge - A small icon that appears in the mod settings menu next to your mod.
     public static final String BADGE_IMAGE = "theClanlessResources/images/Badge.png";

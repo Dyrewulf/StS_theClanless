@@ -148,6 +148,11 @@
     "DESCRIPTION": "Whenever you gain a theclanless:press, gain another press.",
     "UPGRADE_DESCRIPTION": "Whenever you gain a theclanless:press, gain another press."
   },
+  "theClanless:UndeadPersistence": {
+    "NAME": "Undead Persistence",
+    "DESCRIPTION": "When you would die, prevent death and gain 1 HP and !M! intangible.",
+    "UPGRADE_DESCRIPTION": "When you would die, prevent death and gain 1 HP and !M! intangible."
+  },
   "theClanless:UndeadStrength": {
     "NAME": "Undead Strength",
     "DESCRIPTION": "Deal !D! damage.",
