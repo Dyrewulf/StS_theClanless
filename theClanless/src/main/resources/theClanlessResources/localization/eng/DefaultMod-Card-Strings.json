@@ -63,6 +63,11 @@
     "DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat.",
     "UPGRADE_DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat."
   },
+  "theClanless:Indomitability": {
+    "NAME": "Indomitability",
+    "DESCRIPTION": "Gain !B! block and !M! theclanless:press",
+    "UPGRADE_DESCRIPTION": "Gain !B! block and !M! theclanless:presses"
+  },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
     "DESCRIPTION": "Whenever you play a card, draw a card.",
