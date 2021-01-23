@@ -16,5 +16,16 @@
       "Presses"
     ],
     "DESCRIPTION": "Increases Strength next turn. Potence cards consume for effect."
+  },
+  {
+    "NAMES": [
+      "additional strike",
+      "Additional strike",
+      "Additional Strike",
+      "additional strikes",
+      "Additional strikes",
+      "Additional Strikes"
+    ],
+    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
   }
 ]

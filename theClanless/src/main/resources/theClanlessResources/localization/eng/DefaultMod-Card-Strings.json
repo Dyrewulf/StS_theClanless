@@ -6,7 +6,8 @@
   },
   "theClanless:Blur": {
     "NAME": "Blur",
-    "DESCRIPTION": "Deal !D! damage !M! times."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional strike.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional strikes."
   },
   "theClanless:BoxedIn": {
     "NAME": "Boxed In",
@@ -102,6 +103,11 @@
     "NAME": "Pulled Fangs",
     "DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy."
+  },
+  "theClanless:QuickJab": {
+    "NAME": "Quick Jab",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust."
   },
   "theClanless:RapidHealing": {
     "NAME": "Rapid Healing",

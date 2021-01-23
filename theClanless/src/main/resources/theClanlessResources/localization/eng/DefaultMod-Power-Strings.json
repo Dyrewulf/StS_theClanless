@@ -1,4 +1,10 @@
 {
+  "theClanless:AdditionalStrikePower": {
+    "NAME": "Additional Strike",
+    "DESCRIPTIONS": [
+      "You have gained an additional strike this round, and cannot gain more until next round."
+    ]
+  },
   "theClanless:BloodhealPower": {
     "NAME": "Bloodheal",
     "DESCRIPTIONS": [
