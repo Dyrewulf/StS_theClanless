@@ -47,7 +47,7 @@ public class AdditionalStrikeAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        if (!player.hasPower(AdditionalStrikePower.POWER_ID)) {
+        if (!player.hasPower(AdditionalStrikePower.POWER_ID) && !applyPower) {
 
             int randomNum = 0;
             if (cardList.size() > 1) {
