@@ -13,6 +13,14 @@
       " attacks restores HP and exhausts."
     ]
   },
+  "theClanless:ForcedVigilancePower": {
+    "NAME": "Forced Vigilance",
+    "DESCRIPTIONS": [
+      "Retain up to #b",
+      "energy each turn.",
+      "energy each turn."
+    ]
+  },
   "theClanless:InfernalPursuitPower": {
     "NAME": "Infernal Pursuit",
     "DESCRIPTIONS": [

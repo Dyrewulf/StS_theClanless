@@ -19,12 +19,8 @@
   },
   {
     "NAMES": [
-      "additional strike",
-      "Additional strike",
-      "Additional Strike",
-      "additional strikes",
-      "Additional strikes",
-      "Additional Strikes"
+      "additional",
+      "Additional"
     ],
     "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
   }

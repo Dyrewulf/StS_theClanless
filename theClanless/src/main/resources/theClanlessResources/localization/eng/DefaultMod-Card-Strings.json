@@ -4,6 +4,16 @@
     "DESCRIPTION": "Gain !M! Buffer.",
     "UPGRADE_DESCRIPTION": "Gain !M! Buffer. NL Your next attack costs 1 less Energy."
   },
+  "theClanless:BaseballBat": {
+    "NAME": "Baseball Bat",
+    "DESCRIPTION": "Deal !D! damage and refund up to !M! energy. Retain.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and refund up to !M! energy. Retain."
+  },
+  "theClanless:BastardSword": {
+    "NAME": "Bastard Sword",
+    "DESCRIPTION": "Deal !D! damage. Retain. When retained, increase Bastard Sword's damage by !M! for this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Retain. When retained, increase Bastard Sword's damage by !M! for this combat."
+  },
   "theClanless:Blur": {
     "NAME": "Blur",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional strike.",
@@ -13,6 +23,11 @@
     "NAME": "Boxed In",
     "DESCRIPTION": "Gain !M! theclanless:press. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:press."
+  },
+  "theClanless:BrassKnuckles": {
+    "NAME": "Brass Knuckles",
+    "DESCRIPTION": "Deal !D! damage. Retain. Exhaustive: !stslib:ex!.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Retain. Exhaustive: !stslib:ex!."
   },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
@@ -53,6 +68,11 @@
     "NAME": "Flash",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card."
+  },
+  "theClanless:ForcedVigilance": {
+    "NAME": "Forced Vigilance",
+    "DESCRIPTION": "Gain 1 energized for up to !M! unused energy at the end of your turn.",
+    "UPGRADE_DESCRIPTION": "Gain 1 energized for up to !M! unused energy at the end of your turn."
   },
   "theClanless:GrowingFury": {
     "NAME": "Growing Fury",
