@@ -39,7 +39,7 @@ public class AdditionalStrikeAction extends AbstractGameAction {
         this.duration = Settings.ACTION_DUR_XFAST;
         this.actionType = ActionType.WAIT;
         this.player = p;
-        this.cardList = new ArrayList<AbstractCard>();
+        this.cardList = new ArrayList<>();
         this.cardList.add(card);
         this.applyPower = applyPower;
     }
@@ -47,7 +47,7 @@ public class AdditionalStrikeAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        if (!player.hasPower(AdditionalStrikePower.POWER_ID)) {
+        if (!player.hasPower(AdditionalStrikePower.POWER_ID) || !applyPower) {
 
             int randomNum = 0;
             if (cardList.size() > 1) {
