@@ -1,6 +1,13 @@
 [
   {
     "NAMES": [
+      "Bloodheal",
+      "bloodheal"
+    ],
+    "DESCRIPTION": "The next attack you play this turn heals you for the amount of damage done, and is Exhausted."
+  },
+  {
+    "NAMES": [
       "maneuver",
       "maneuvers",
       "Maneuver",
