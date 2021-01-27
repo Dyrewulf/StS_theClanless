@@ -27,14 +27,6 @@ public abstract class AbstractClanlessCard extends CustomCard {
                                 final CardTarget target) {
 
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
-
-        // Set all the things to their default values.
-        isCostModified = false;
-        isCostModifiedForTurn = false;
-        isDamageModified = false;
-        isBlockModified = false;
-        isMagicNumberModified = false;
-        isClanlessSecondMagicNumberModified = false;
     }
 
     public void displayUpgrades() { // Display the upgrade - when you click a card to upgrade it
@@ -43,10 +35,9 @@ public abstract class AbstractClanlessCard extends CustomCard {
             clanlessSecondMagicNumber = baseClanlessSecondMagicNumber; // Show how the number changes, as out of combat, the base number of a card is shown.
             isClanlessSecondMagicNumberModified = true; // Modified = true, color it green to highlight that the number is being changed.
         }
-
     }
 
-    public void upgradeDefaultSecondMagicNumber(int amount) { // If we're upgrading (read: changing) the number. Note "upgrade" and NOT "upgraded" - 2 different things. One is a boolean, and then this one is what you will usually use - change the integer by how much you want to upgrade.
+    public void upgradeClanlessSecondMagicNumber(int amount) { // If we're upgrading (read: changing) the number. Note "upgrade" and NOT "upgraded" - 2 different things. One is a boolean, and then this one is what you will usually use - change the integer by how much you want to upgrade.
         baseClanlessSecondMagicNumber += amount; // Upgrade the number by the amount you provide in your card.
         clanlessSecondMagicNumber = baseClanlessSecondMagicNumber; // Set the number to be equal to the base value.
         upgradedClanlessSecondMagicNumber = true; // Upgraded = true - which does what the above method does.

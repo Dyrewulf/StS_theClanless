@@ -185,7 +185,7 @@ public class TheClanless extends CustomPlayer {
         retVal.add(Dodge.ID);
         retVal.add(Dodge.ID);
 
-        retVal.add(TasteOfVitae.ID);
+        retVal.add(BumsRush.ID);
         retVal.add(ComputerHacking.ID);
 
         return retVal;
