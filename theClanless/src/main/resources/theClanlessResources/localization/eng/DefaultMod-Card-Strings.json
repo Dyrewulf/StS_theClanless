@@ -19,8 +19,7 @@
   },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
-    "DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust."
+    "DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust."
   },
   "theClanless:ComputerHacking": {
     "NAME": "Computer Hacking",
@@ -129,7 +128,7 @@
   "theClanless:SkinOfSteel": {
     "NAME": "Skin of Steel",
     "DESCRIPTION": "Gain block equal to target monster's damage.",
-    "UPGRADE_DESCRIPTION":  "Gain black equal to all monster's damage."
+    "UPGRADE_DESCRIPTION": "Gain black equal to all monster's damage."
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
