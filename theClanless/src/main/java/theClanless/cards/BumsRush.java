@@ -26,7 +26,7 @@ public class BumsRush extends AbstractDynamicCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
 
-    private static final int COST = 2;
+    private static final int COST = 1;
 
     private static final int DAMAGE = 9;
     private static final int UPGRADE_PLUS_DMG = 3;
@@ -50,8 +50,10 @@ public class BumsRush extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ManeuverPower(p, p, this.magicNumber)));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PressPower(p, p, this.clanlessSecondMagicNumber)));
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(p, p, new ManeuverPower(p, p, this.magicNumber)));
+        AbstractDungeon.actionManager.addToBottom(
+                new ApplyPowerAction(p, p, new PressPower(p, p, this.clanlessSecondMagicNumber)));
     }
 
     // Upgraded stats.

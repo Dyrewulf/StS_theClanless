@@ -15,8 +15,7 @@
   },
   "theClanless:BumsRush": {
     "NAME": "Bum's Rush",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:Maneuver. NL Gain !theClanless:M2! theclanless:Press.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:Maneuvers. NL Gain !theClanless:M2! theclanless:Presses."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:Maneuver. NL Gain !theClanless:M2! theclanless:Press."
   },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
@@ -67,6 +66,10 @@
     "NAME": "Increased Strength",
     "DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat.",
     "UPGRADE_DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat."
+  },
+  "theClanless:Indomitability": {
+    "NAME": "Indomitability",
+    "DESCRIPTION": "Gain !B! Block and !M! theclanless:Press."
   },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
