@@ -71,7 +71,6 @@ public class Blur extends AbstractDynamicCard {
             upgradeName();
             upgradeBaseCost(UPGRADED_COST);
             upgradeMagicNumber(MAGICNUMBER_PLUS);
-            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
