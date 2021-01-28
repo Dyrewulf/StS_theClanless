@@ -6,7 +6,8 @@
   },
   "theClanless:Blur": {
     "NAME": "Blur",
-    "DESCRIPTION": "Deal !D! damage !M! times."
+    "DESCRIPTION": "Deal !D! damage !M! times.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times."
   },
   "theClanless:BoxedIn": {
     "NAME": "Boxed In",
@@ -40,8 +41,8 @@
   },
   "theClanless:FastHands": {
     "NAME": "Fast Hands",
-    "DESCRIPTION": "Retrieve a card from your discard pile and reduce it's cost by !M! . NL The retrieved card Exhausts.",
-    "UPGRADE_DESCRIPTION": "Retrieve a card from your discard pile and reduce it's cost by !M! . NL The retrieved card Exhausts."
+    "DESCRIPTION": "Retrieve a card from your discard pile and reduce its cost by !M! . NL The retrieved card Exhausts.",
+    "UPGRADE_DESCRIPTION": "Retrieve a card from your discard pile and reduce its cost by !M! . NL The retrieved card Exhausts."
   },
   "theClanless:FistsOfDeath": {
     "NAME": "Fists of Death",

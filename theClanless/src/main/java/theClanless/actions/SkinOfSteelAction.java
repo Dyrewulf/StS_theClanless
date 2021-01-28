@@ -6,25 +6,21 @@
 package theClanless.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
 public class SkinOfSteelAction extends AbstractGameAction {
-    private static final UIStrings uiStrings;
     public static final String[] TEXT;
-    private boolean isThisUpgraded = false;
-    private AbstractMonster targetMonster;
-    private AbstractPlayer player;
+
+    private static final UIStrings uiStrings;
+    private final boolean isThisUpgraded;
+    private final AbstractMonster targetMonster;
+    private final AbstractPlayer player;
 
     public SkinOfSteelAction(AbstractMonster m, boolean isThisUpgraded) {
         this.duration = 0.0F;
@@ -40,10 +36,7 @@ public class SkinOfSteelAction extends AbstractGameAction {
                     new GainBlockAction(player, player, this.targetMonster.getIntentBaseDmg())
             );
         } else if (isThisUpgraded) {
-            ArrayList<AbstractMonster> theMonsters = AbstractDungeon.getMonsters().monsters;
-            Iterator iter234345 = theMonsters.iterator();
-            while (iter234345.hasNext()) {
-                AbstractMonster mon = (AbstractMonster) iter234345.next();
+            for (AbstractMonster mon : AbstractDungeon.getMonsters().monsters) {
                 if (!mon.isDead && mon.getIntentBaseDmg() >= 0) {
                     AbstractDungeon.actionManager.addToBottom(
                             new GainBlockAction(player, player, mon.getIntentBaseDmg())

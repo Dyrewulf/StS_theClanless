@@ -29,7 +29,6 @@ import theClanless.theClanlessMod;
 import theClanless.cards.*;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Map;
 
 import static theClanless.characters.TheClanless.Enums.*;
@@ -84,7 +83,6 @@ public class TheClanless extends CustomPlayer {
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
     public static final int ORB_SLOTS = 0;
-    public static ArrayList<AbstractCard.CardColor> DisciplinePool;
 
     // =============== /BASE STATS/ =================
 
@@ -208,36 +206,10 @@ public class TheClanless extends CustomPlayer {
         return retVal;
     }
 
-    //Discipline Management
-    public static boolean hasDiscipline(String inDisc) {
-        Iterator var1 = AbstractDungeon.player.getRelicNames().iterator();
-        while(var1.hasNext()) {
-            String tempColor = (String) var1.next();
-            if (tempColor == inDisc) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private boolean disciplineColorCheck(ArrayList<AbstractCard.CardColor> inList, AbstractCard.CardColor inColor) {
-        Iterator var2 = inList.iterator();
-        while(var2.hasNext()) {
-            AbstractCard.CardColor color = (AbstractCard.CardColor) var2.next();
-            if (color == inColor) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     private ArrayList<AbstractCard.CardColor> getDisciplineColors() {
         ArrayList<AbstractCard.CardColor> disciplineColors = new ArrayList<>();
         disciplineColors.add(COLOR_CLANLESSRED);
-        String name;
-        Iterator var1 = AbstractDungeon.player.getRelicNames().iterator();
-        while(var1.hasNext()) {
-            name = (String) var1.next();
+        for (String name : AbstractDungeon.player.getRelicNames()) {
             logger.info("Iterating Relics: relic name is: " + name);
             switch (name) {
                 case "theClanless:CelerityRelic":
@@ -267,13 +239,9 @@ public class TheClanless extends CustomPlayer {
         //AbstractCard.CardColor color = this.getCardColor();
         ArrayList<AbstractCard.CardColor> disciplineColors = getDisciplineColors();
 
-        Iterator var3 = CardLibrary.cards.entrySet().iterator();
-
-        while(var3.hasNext()) {
-            Map.Entry<String, AbstractCard> c = (Map.Entry<String, AbstractCard>) var3.next();
+        for (Map.Entry<String, AbstractCard> c : CardLibrary.cards.entrySet()) {
             AbstractCard card = c.getValue();
-
-            if (disciplineColorCheck(disciplineColors, card.color) &&
+            if (disciplineColors.contains(card.color) &&
                     !card.rarity.equals(AbstractCard.CardRarity.BASIC) &&
                     !card.rarity.equals(AbstractCard.CardRarity.SPECIAL) &&
                     (!UnlockTracker.isCardLocked(c.getKey()) || Settings.isDailyRun)
@@ -284,7 +252,6 @@ public class TheClanless extends CustomPlayer {
         }
 
         return tmpPool;
-
     }
 
 
