@@ -41,8 +41,8 @@ public class BumsRush extends AbstractDynamicCard {
     public BumsRush() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
-        baseMagicNumber = magicNumber = MANEUVER;
-        baseClanlessSecondMagicNumber = clanlessSecondMagicNumber = PRESS;
+        baseMagicNumber = MANEUVER;
+        baseClanlessSecondMagicNumber = PRESS;
     }
 
     // Actions the card should do.

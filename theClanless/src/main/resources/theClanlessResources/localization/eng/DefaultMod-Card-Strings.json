@@ -180,6 +180,10 @@
     "DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity.",
     "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity."
   },
+  "theClanless:WeightedWalkingStick": {
+    "NAME": "Weighted Walking Stick",
+    "DESCRIPTION": "Deal !D! damage for each theclanless:Press. NL If it attacked more than !M! times it is Exhausted."
+  },
   "theClanless:WellAimedCar": {
     "NAME": "Well Aimed Car",
     "DESCRIPTION": "Deal !D! damage at the end of next turn.",
