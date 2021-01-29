@@ -40,20 +40,17 @@ public class BumsRush extends AbstractDynamicCard {
 
     public BumsRush() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
-        baseMagicNumber = MANEUVER;
-        baseClanlessSecondMagicNumber = PRESS;
+        damage = baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = MANEUVER;
+        clanlessSecondMagicNumber = baseClanlessSecondMagicNumber = PRESS;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(
-                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(p, p, new ManeuverPower(p, p, this.magicNumber)));
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(p, p, new PressPower(p, p, this.clanlessSecondMagicNumber)));
+        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        addToBot(new ApplyPowerAction(p, p, new ManeuverPower(p, p, this.magicNumber)));
+        addToBot(new ApplyPowerAction(p, p, new PressPower(p, p, this.clanlessSecondMagicNumber)));
     }
 
     // Upgraded stats.

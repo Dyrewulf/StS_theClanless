@@ -34,8 +34,8 @@ public class TargetVitals extends AbstractDynamicCard {
 
     public TargetVitals() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
-        baseMagicNumber = VULNERABLE;
+        damage = baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = VULNERABLE;
     }
 
     // Actions the card should do.

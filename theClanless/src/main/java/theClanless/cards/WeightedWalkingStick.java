@@ -30,13 +30,13 @@ public class WeightedWalkingStick extends AbstractDynamicCard {
     private static final int UPGRADE_PLUS_DMG = 2;
 
     private static final int DURABILITY = 3;
-    private static final int DURABILITY_UPGRADE = 3;
+    private static final int DURABILITY_UPGRADE = 4;
     // /STAT DECLARATION/
 
     public WeightedWalkingStick() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        baseDamage = DAMAGE;
-        baseMagicNumber = DURABILITY;
+        damage = baseDamage = DAMAGE;
+        magicNumber = baseMagicNumber = DURABILITY;
     }
 
     // Actions the card should do.
@@ -53,7 +53,7 @@ public class WeightedWalkingStick extends AbstractDynamicCard {
                 }
                 addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), effect));
             }
-            if (presses.amount > this.baseMagicNumber) {
+            if (presses.amount > this.magicNumber) {
                 this.exhaust = true;
             }
         }

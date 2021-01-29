@@ -29,13 +29,13 @@ public class OrgyOfBlood extends AbstractDynamicCard {
 
     public OrgyOfBlood() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = HEAL;
+        this.magicNumber = this.baseMagicNumber = HEAL;
     }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new OrgyOfBloodAction(this.baseMagicNumber));
+        addToBot(new OrgyOfBloodAction(this.magicNumber));
     }
 
     // Upgraded stats.
