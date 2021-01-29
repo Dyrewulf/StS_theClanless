@@ -54,6 +54,11 @@
     "DESCRIPTION": "You may exhaust a card in your hand for !M! Strength. Deal !D! damage.",
     "UPGRADE_DESCRIPTION": "You may exhaust a card in your hand for !M! Strength. Deal !D! damage."
   },
+  "theClanless:Decapitate": {
+    "NAME": "Decapitate",
+    "DESCRIPTION": "If the target monster has !M! or less HP, it loses it's head.",
+    "UPGRADE_DESCRIPTION": "If the target monster has !M! or less HP, it loses it's head."
+  },
   "theClanless:Distraction": {
     "NAME": "Distraction",
     "DESCRIPTION": "Draw !M! cards. Discard 2.",
@@ -169,6 +174,11 @@
     "DESCRIPTION": "Gain !M! theclanless:maneuvers each turn.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers each turn."
   },
+  "theClanless:SkinOfNight": {
+    "NAME": "Skin of Night",
+    "DESCRIPTION": "Reduce all thorns damage by !M!.",
+    "UPGRADE_DESCRIPTION": "Reduce all thorns damage by !M!"
+  },
   "theClanless:SkinOfRock": {
     "NAME": "Skin of Rock",
     "DESCRIPTION": "Gain !B! block.",
@@ -178,6 +188,11 @@
     "NAME": "Skin of Steel",
     "DESCRIPTION": "Gain block equal to target monster's damage.",
     "UPGRADE_DESCRIPTION":  "Gain black equal to all monster's damage."
+  },
+  "theClanless:Steadfastness": {
+    "NAME": "Steadfastness",
+    "DESCRIPTION": "Gain !M! dexterity.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! dexterity."
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",

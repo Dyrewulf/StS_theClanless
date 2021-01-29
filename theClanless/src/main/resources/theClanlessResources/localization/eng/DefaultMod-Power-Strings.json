@@ -59,6 +59,13 @@
       "each turn."
     ]
   },
+  "theClanless:SkinOfNightPower": {
+    "NAME": "Skin of Night",
+    "DESCRIPTIONS": [
+      "Reduce thorns damage by #b",
+      "."
+    ]
+  },
 
   "theClanless:TempBufferPower": {
     "NAME": "Transient Buffer",
