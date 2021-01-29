@@ -14,10 +14,13 @@
     "DESCRIPTION": "Gain !M! theclanless:press. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:press."
   },
+  "theClanless:BumsRush": {
+    "NAME": "Bum's Rush",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:Maneuver. NL Gain !theClanless:M2! theclanless:Press."
+  },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
-    "DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust."
+    "DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust."
   },
   "theClanless:ComputerHacking": {
     "NAME": "Computer Hacking",
@@ -32,7 +35,7 @@
   "theClanless:Dodge": {
     "NAME": "Dodge",
     "DESCRIPTION": "Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. "
+    "UPGRADE_DESCRIPTION": "Gain !B! Block."
   },
   "theClanless:FakeOut": {
     "NAME": "Fake Out",
@@ -64,6 +67,10 @@
     "DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat.",
     "UPGRADE_DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat."
   },
+  "theClanless:Indomitability": {
+    "NAME": "Indomitability",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! theclanless:Press."
+  },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
     "DESCRIPTION": "Whenever you play a card, draw a card.",
@@ -88,6 +95,10 @@
     "NAME": "Nimble Feet",
     "DESCRIPTION": "Your next Skill is played twice.",
     "UPGRADE_DESCRIPTION": "Your next skill and next attack are played twice."
+  },
+  "theClanless:OrgyOfBlood": {
+    "NAME": "Orgy of Blood",
+    "DESCRIPTION": "Exhaust a card from your hand. NL Heal !M! equal to its cost."
   },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
@@ -122,7 +133,7 @@
   "theClanless:SkinOfSteel": {
     "NAME": "Skin of Steel",
     "DESCRIPTION": "Gain block equal to target monster's damage.",
-    "UPGRADE_DESCRIPTION":  "Gain black equal to all monster's damage."
+    "UPGRADE_DESCRIPTION": "Gain black equal to all monster's damage."
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
@@ -164,6 +175,10 @@
     "DESCRIPTION": "Gain !B! block. Increase the block of all Unflinching Persistence by !M!.",
     "UPGRADE_DESCRIPTION": "Gain !B! block. Increase the block of all Unflinching Persistence by !M!."
   },
+  "theClanless:TargetVitals": {
+    "NAME": "Target Vitals",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable."
+  },
   "theClanless:VampiricSpeed": {
     "NAME": "Vampiric Speed",
     "DESCRIPTION": "Gain !B! block. Consume 1 theclanless:maneuver to gain !M! block.",
@@ -173,6 +188,10 @@
     "NAME": "Wake w/ Evening Freshness",
     "DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity.",
     "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity."
+  },
+  "theClanless:WeightedWalkingStick": {
+    "NAME": "Weighted Walking Stick",
+    "DESCRIPTION": "Deal !D! damage for each theclanless:Press. NL If it attacked more than !M! times it is Exhausted."
   },
   "theClanless:WellAimedCar": {
     "NAME": "Well Aimed Car",
