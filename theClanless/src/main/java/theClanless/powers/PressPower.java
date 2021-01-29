@@ -5,22 +5,15 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theClanless.theClanlessMod;
 import theClanless.util.TextureLoader;
 
-import static com.megacrit.cardcrawl.powers.LoseStrengthPower.*;
-import static com.megacrit.cardcrawl.powers.StrengthPower.*;
 import static theClanless.theClanlessMod.makePowerPath;
-
-//Gain 1 dex for the turn for each card played.
 
 public class PressPower extends AbstractPower implements CloneablePowerInterface {
     public AbstractCreature source;
@@ -55,21 +48,14 @@ public class PressPower extends AbstractPower implements CloneablePowerInterface
 
     @Override
     public void atStartOfTurn() {
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(owner, owner, new StrengthPower(this.owner, this.amount), this.amount)
-        );
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(owner, owner, new LoseStrengthPower(this.owner, this.amount), this.amount)
-        );
-        AbstractDungeon.actionManager.addToBottom(
-                new ReducePowerAction(owner, owner, PressPower.POWER_ID, this.amount)
-        );
+        addToBot(new ApplyPowerAction(owner, owner, new StrengthPower(this.owner, 1), 1));
+        addToBot(new ReducePowerAction(owner, owner, PressPower.POWER_ID, 1));
         super.atStartOfTurn();
     }
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + this.amount +DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     @Override
