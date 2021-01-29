@@ -29,6 +29,11 @@
     "DESCRIPTION": "Deal !D! damage. Retain. Exhaustive: !stslib:ex!.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Retain. Exhaustive: !stslib:ex!."
   },
+  "theClanless:BurningWrath": {
+    "NAME": "Burning Wrath",
+    "DESCRIPTION": "Deal !D! unblockable damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! unblockable damage. NL Exhaust."
+  },
   "theClanless:CatBurglary": {
     "NAME": "Cat Burglary",
     "DESCRIPTION": "Deal !D! damage and gain !D! X !M! gold. Exhaust.",
@@ -38,6 +43,16 @@
     "NAME": "Computer Hacking",
     "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable."
+  },
+  "theClanless:DaringTheDawn": {
+    "NAME": "Daring the Dawn",
+    "DESCRIPTION": "Deal !D! damage. If you have less than !M! vulnerable, gain a vulnerable.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If you have less than !M! vulnerable, gain a vulnerable."
+  },
+  "theClanless:DeathOfMyConscience": {
+    "NAME": "Death of my Conscience",
+    "DESCRIPTION": "You may exhaust a card in your hand for !M! Strength. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "You may exhaust a card in your hand for !M! Strength. Deal !D! damage."
   },
   "theClanless:Distraction": {
     "NAME": "Distraction",
@@ -78,6 +93,11 @@
     "NAME": "Growing Fury",
     "DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!"
+  },
+  "theClanless:Haymaker": {
+    "NAME": "Haymaker",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL Exhaust."
   },
   "theClanless:IncreasedStrength": {
     "NAME": "Increased Strength",
