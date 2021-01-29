@@ -95,6 +95,10 @@
     "DESCRIPTION": "Your next Skill is played twice.",
     "UPGRADE_DESCRIPTION": "Your next skill and next attack are played twice."
   },
+  "theClanless:OrgyOfBlood": {
+    "NAME": "Orgy of Blood",
+    "DESCRIPTION": "Exhaust a card from your hand and heal !M! for each energy in its cost."
+  },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers.",
