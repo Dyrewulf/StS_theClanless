@@ -34,7 +34,7 @@
   "theClanless:Dodge": {
     "NAME": "Dodge",
     "DESCRIPTION": "Gain !B! Block.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. "
+    "UPGRADE_DESCRIPTION": "Gain !B! Block."
   },
   "theClanless:FakeOut": {
     "NAME": "Fake Out",
@@ -68,7 +68,7 @@
   },
   "theClanless:Indomitability": {
     "NAME": "Indomitability",
-    "DESCRIPTION": "Gain !B! Block and !M! theclanless:Press."
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! theclanless:Press."
   },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
@@ -97,7 +97,7 @@
   },
   "theClanless:OrgyOfBlood": {
     "NAME": "Orgy of Blood",
-    "DESCRIPTION": "Exhaust a card from your hand and heal !M! for each energy in its cost."
+    "DESCRIPTION": "Exhaust a card from your hand. NL Heal !M! equal to its cost."
   },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
