@@ -14,26 +14,12 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class ItsaTrap extends AbstractDynamicCard {
 
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Hold Place Gain 1(2) Keywords(s).
-     */
-
-
-    // TEXT DECLARATION
-
-    public static final String ID = theClanlessMod.makeID("ItsaTrap");
+    public static final String ID = theClanlessMod.makeID(ItsaTrap.class.getSimpleName());
     public static final String IMG = makeCardPath("ItsaTrap.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-
-    // /TEXT DECLARATION/
-
-
-    // STAT DECLARATION
 
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
@@ -44,8 +30,6 @@ public class ItsaTrap extends AbstractDynamicCard {
     private static final int COST = 1;
     private static final int UPGRADED_COST = 0;
     private static final int MAGIC = 1;
-
-    // /STAT DECLARATION/
 
 
     public ItsaTrap() {

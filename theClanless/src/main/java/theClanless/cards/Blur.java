@@ -16,10 +16,10 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Blur extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID("Blur");
+    public static final String ID = theClanlessMod.makeID(Blur.class.getSimpleName());
     public static final String IMG = makeCardPath("Blur.png");
 
-    // STAT DECLARATION
+
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -29,13 +29,12 @@ public class Blur extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheClanless.Enums.CELERITY;
 
-    private static final int COST = 1;  // COST = ${COST}
-    private static final int UPGRADED_COST = 1; // UPGRADED_COST = ${UPGRADED_COST}
+    private static final int COST = 1;
 
-    private static final int DAMAGE = 8;    // DAMAGE = ${DAMAGE}
+    private static final int DAMAGE = 8;
     private static final int MAGICNUMBER = 1;
     private static final int MAGICNUMBER_PLUS = 1;
-    // /STAT DECLARATION/
+
 
     public Blur() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -45,7 +44,7 @@ public class Blur extends AbstractDynamicCard {
         this.tags.add(CardTags.STRIKE);
     }
 
-    // Actions the card should do.
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
@@ -61,7 +60,7 @@ public class Blur extends AbstractDynamicCard {
         );
     }
 
-    // Upgraded stats.
+
     @Override
     public void upgrade() {
         if (!upgraded) {

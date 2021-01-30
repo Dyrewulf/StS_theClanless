@@ -14,15 +14,6 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Sideslip extends AbstractDynamicCard {
 
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Hold Place Gain 1(2) Keywords(s).
-     */
-
-
-    // TEXT DECLARATION
-
     public static final String ID = theClanlessMod.makeID("Sideslip");
     public static final String IMG = makeCardPath("Sideslip.png");
 

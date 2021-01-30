@@ -14,23 +14,10 @@ import theClanless.theClanlessMod;
 import static theClanless.theClanlessMod.makeCardPath;
 
 public class BoxedIn extends AbstractDynamicCard {
-
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Defend Gain 5 (8) block.
-     */
-
-
-    // TEXT DECLARATION
-
-    public static final String ID = theClanlessMod.makeID("BoxedIn");
+    public static final String ID = theClanlessMod.makeID(BoxedIn.class.getSimpleName());
     public static final String IMG = makeCardPath("BoxedIn.png");
 
-    // /TEXT DECLARATION/
 
-
-    // STAT DECLARATION
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -44,8 +31,6 @@ public class BoxedIn extends AbstractDynamicCard {
     private static final int MAGICNUMBER  = 2;
 
 
-    // /STAT DECLARATION/
-
 
     public BoxedIn() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -54,13 +39,13 @@ public class BoxedIn extends AbstractDynamicCard {
         this.exhaust = true;
     }
 
-    // Actions the card should do.
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PressPower(p, p, magicNumber)));
     }
 
-    //Upgraded stats.
+
     @Override
     public void upgrade() {
         if (!upgraded) {
