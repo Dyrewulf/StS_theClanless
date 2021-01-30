@@ -45,18 +45,13 @@ public class VampiricSpeed extends AbstractDynamicCard {
     private static final int UPGRADE_PLUS_BLOCK = 3;
     private static final int MAGICNUMBER = 2;
     private static final int MAGICNUMBER_PLUS = 1;
-    private static final int SECONDMAGICNUMBER = 3;
-
 
     // /STAT DECLARATION/
-
 
     public VampiricSpeed() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.block = this.baseBlock = BLOCK;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
-        this.baseClanlessSecondMagicNumber = SECONDMAGICNUMBER;
-
     }
 
     // Actions the card should do.
@@ -87,9 +82,7 @@ public class VampiricSpeed extends AbstractDynamicCard {
                 }
             }
         }
-
     }
-
 
     //Upgraded stats.
     @Override
