@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theClanless.actions.AdditionalStrikeAction;
 import theClanless.characters.TheClanless;
 import theClanless.theClanlessMod;
 
@@ -28,9 +29,11 @@ public class Blur extends AbstractDynamicCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheClanless.Enums.CELERITY;
 
-    private static final int COST = 1;
-    private static final int DAMAGE = 5;
-    private static final int MAGICNUMBER = 2;
+    private static final int COST = 1;  // COST = ${COST}
+    private static final int UPGRADED_COST = 1; // UPGRADED_COST = ${UPGRADED_COST}
+
+    private static final int DAMAGE = 8;    // DAMAGE = ${DAMAGE}
+    private static final int MAGICNUMBER = 1;
     private static final int MAGICNUMBER_PLUS = 1;
     // /STAT DECLARATION/
 
@@ -45,10 +48,17 @@ public class Blur extends AbstractDynamicCard {
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = this.magicNumber; i > 0; i--) {
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL)
+        );
+        if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(
-                    new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                    new AdditionalStrikeAction(p, new QuickJab(), false)
+            );
         }
+        AbstractDungeon.actionManager.addToBottom(
+                new AdditionalStrikeAction(p, new QuickJab(), true)
+        );
     }
 
     // Upgraded stats.

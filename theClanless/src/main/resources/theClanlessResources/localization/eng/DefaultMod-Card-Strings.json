@@ -4,15 +4,35 @@
     "DESCRIPTION": "Gain !M! Buffer.",
     "UPGRADE_DESCRIPTION": "Gain !M! Buffer. NL Your next attack costs 1 less Energy."
   },
+  "theClanless:BaseballBat": {
+    "NAME": "Baseball Bat",
+    "DESCRIPTION": "Deal !D! damage and refund up to !M! energy. Retain.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and refund up to !M! energy. Retain."
+  },
+  "theClanless:BastardSword": {
+    "NAME": "Bastard Sword",
+    "DESCRIPTION": "Deal !D! damage. Retain. When retained, increase Bastard Sword's damage by !M! for this combat.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Retain. When retained, increase Bastard Sword's damage by !M! for this combat."
+  },
   "theClanless:Blur": {
     "NAME": "Blur",
-    "DESCRIPTION": "Deal !D! damage !M! times.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage !M! times."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional strike.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional strikes."
   },
   "theClanless:BoxedIn": {
     "NAME": "Boxed In",
     "DESCRIPTION": "Gain !M! theclanless:press. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:press."
+  },
+  "theClanless:BrassKnuckles": {
+    "NAME": "Brass Knuckles",
+    "DESCRIPTION": "Deal !D! damage. Retain. Exhaustive: !stslib:ex!.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Retain. Exhaustive: !stslib:ex!."
+  },
+  "theClanless:BurningWrath": {
+    "NAME": "Burning Wrath",
+    "DESCRIPTION": "Deal !D! unblockable damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! unblockable damage. NL Exhaust."
   },
   "theClanless:BumsRush": {
     "NAME": "Bum's Rush",
@@ -26,6 +46,21 @@
     "NAME": "Computer Hacking",
     "DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! Vulnerable."
+  },
+  "theClanless:DaringTheDawn": {
+    "NAME": "Daring the Dawn",
+    "DESCRIPTION": "Deal !D! damage. If you have less than !M! vulnerable, gain a vulnerable.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. If you have less than !M! vulnerable, gain a vulnerable."
+  },
+  "theClanless:DeathOfMyConscience": {
+    "NAME": "Death of my Conscience",
+    "DESCRIPTION": "You may exhaust a card in your hand for !M! Strength. Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "You may exhaust a card in your hand for !M! Strength. Deal !D! damage."
+  },
+  "theClanless:Decapitate": {
+    "NAME": "Decapitate",
+    "DESCRIPTION": "If the target monster has !M! or less HP, it loses it's head.",
+    "UPGRADE_DESCRIPTION": "If the target monster has !M! or less HP, it loses it's head."
   },
   "theClanless:Distraction": {
     "NAME": "Distraction",
@@ -57,10 +92,20 @@
     "DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card."
   },
+  "theClanless:ForcedVigilance": {
+    "NAME": "Forced Vigilance",
+    "DESCRIPTION": "Gain 1 energized for up to !M! unused energy at the end of your turn.",
+    "UPGRADE_DESCRIPTION": "Gain 1 energized for up to !M! unused energy at the end of your turn."
+  },
   "theClanless:GrowingFury": {
     "NAME": "Growing Fury",
     "DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume a theclanless:press to increase the damage of this card by !M!"
+  },
+  "theClanless:Haymaker": {
+    "NAME": "Haymaker",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! vulnerable. NL Exhaust."
   },
   "theClanless:IncreasedStrength": {
     "NAME": "Increased Strength",
@@ -69,7 +114,8 @@
   },
   "theClanless:Indomitability": {
     "NAME": "Indomitability",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! theclanless:Press."
+    "DESCRIPTION": "Gain !B! block and !M! theclanless:press",
+    "UPGRADE_DESCRIPTION": "Gain !B! block and !M! theclanless:presses"
   },
   "theClanless:InfernalPursuit": {
     "NAME": "Infernal Pursuit",
@@ -110,6 +156,11 @@
     "DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy."
   },
+  "theClanless:QuickJab": {
+    "NAME": "Quick Jab",
+    "DESCRIPTION": "Deal !D! damage. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Exhaust."
+  },
   "theClanless:RapidHealing": {
     "NAME": "Rapid Healing",
     "DESCRIPTION": "Lose all regeneration. Gain !M! regeneration X times. NL Exhaust.",
@@ -120,10 +171,20 @@
     "DESCRIPTION": "Gain 2 energy. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Gain 2 energy."
   },
+  "theClanless:ShatteringBlow": {
+    "NAME": "Shattering Blow",
+    "DESCRIPTION": "Deal !D! damage. Deals double damage against block.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals double damage against block."
+  },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers each turn.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers each turn."
+  },
+  "theClanless:SkinOfNight": {
+    "NAME": "Skin of Night",
+    "DESCRIPTION": "Reduce all thorns damage by !M!.",
+    "UPGRADE_DESCRIPTION": "Reduce all thorns damage by !M!"
   },
   "theClanless:SkinOfRock": {
     "NAME": "Skin of Rock",
@@ -134,6 +195,11 @@
     "NAME": "Skin of Steel",
     "DESCRIPTION": "Gain block equal to target monster's damage.",
     "UPGRADE_DESCRIPTION": "Gain black equal to all monster's damage."
+  },
+  "theClanless:Steadfastness": {
+    "NAME": "Steadfastness",
+    "DESCRIPTION": "Gain !M! dexterity.",
+    "UPGRADE_DESCRIPTION":  "Gain !M! dexterity."
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
@@ -162,8 +228,8 @@
   },
   "theClanless:UndeadPersistence": {
     "NAME": "Undead Persistence",
-    "DESCRIPTION": "When you would die, prevent death and gain 1 HP and !M! intangible.",
-    "UPGRADE_DESCRIPTION": "When you would die, prevent death and gain 1 HP and !M! intangible."
+    "DESCRIPTION": "When you would die, gain !M! intangible.",
+    "UPGRADE_DESCRIPTION": "When you would die, gain !M! intangible."
   },
   "theClanless:UndeadStrength": {
     "NAME": "Undead Strength",

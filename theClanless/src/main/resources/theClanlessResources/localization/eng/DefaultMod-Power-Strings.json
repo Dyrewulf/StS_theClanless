@@ -1,10 +1,24 @@
 {
+  "theClanless:AdditionalStrikePower": {
+    "NAME": "Additional Strike",
+    "DESCRIPTIONS": [
+      "You have gained an additional strike this round, and cannot gain more until next round."
+    ]
+  },
   "theClanless:BloodhealPower": {
     "NAME": "Bloodheal",
     "DESCRIPTIONS": [
       "Your next #b",
       " attack restores HP and exhausts",
       " attacks restores HP and exhausts."
+    ]
+  },
+  "theClanless:ForcedVigilancePower": {
+    "NAME": "Forced Vigilance",
+    "DESCRIPTIONS": [
+      "Retain up to #b",
+      "energy each turn.",
+      "energy each turn."
     ]
   },
   "theClanless:InfernalPursuitPower": {
@@ -43,6 +57,13 @@
       " maneuver",
       " maneuvers",
       "each turn."
+    ]
+  },
+  "theClanless:SkinOfNightPower": {
+    "NAME": "Skin of Night",
+    "DESCRIPTIONS": [
+      "Reduce thorns damage by #b",
+      "."
     ]
   },
 

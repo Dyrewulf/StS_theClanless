@@ -1,13 +1,10 @@
 package theClanless.cards;
 
-import com.badlogic.gdx.Gdx;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.watcher.JudgementAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.MathHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theClanless.actions.WakeAction;
@@ -16,7 +13,7 @@ import theClanless.theClanlessMod;
 
 import static theClanless.theClanlessMod.makeCardPath;
 
-public class WakeWithEveningsFreshness extends AbstractDynamicCard {
+public class Decapitate extends AbstractDynamicCard {
 
     /*
      * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
@@ -27,8 +24,8 @@ public class WakeWithEveningsFreshness extends AbstractDynamicCard {
 
     // TEXT DECLARATION
 
-    public static final String ID = theClanlessMod.makeID(WakeWithEveningsFreshness.class.getSimpleName());
-    public static final String IMG = makeCardPath("WakeWithEveningsFreshness.png");
+    public static final String ID = theClanlessMod.makeID(Decapitate.class.getSimpleName());
+    public static final String IMG = makeCardPath("Decapitate.png");
 
     // /TEXT DECLARATION/
 
@@ -38,36 +35,33 @@ public class WakeWithEveningsFreshness extends AbstractDynamicCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF_AND_ENEMY;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheClanless.Enums.COLOR_CLANLESSRED;
+    public static final CardColor COLOR = TheClanless.Enums.POTENCE;
 
-    private static final int COST = 1;
-    private static final int BLOCK = 7;
-    private static final int UPGRADE_PLUS_BLOCK = 3;
+    private static final int COST = 0;
 
-    private static final int MAGICNUMBER = 1;
-    private static final int MAGICNUMBER_PLUS = 1;
+    private static final int MAGICNUMBER = 20;
+    private static final int MAGICNUMBER_PLUS = 10;
 
 
     // /STAT DECLARATION/
 
 
-    public WakeWithEveningsFreshness() {
+    public Decapitate() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
-        this.block = this.baseBlock = BLOCK;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
 
-    }
+        }
 
     // Actions the card should do.
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
         AbstractDungeon.actionManager.addToBottom(
-                new WakeAction(magicNumber, m)
+                new JudgementAction(m, this.magicNumber)
         );
+
     }
 
     //Upgraded stats.
@@ -75,7 +69,6 @@ public class WakeWithEveningsFreshness extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(UPGRADE_PLUS_BLOCK);
             upgradeMagicNumber(MAGICNUMBER_PLUS);
             this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
