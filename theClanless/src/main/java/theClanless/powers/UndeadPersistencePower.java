@@ -16,6 +16,8 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
 import com.megacrit.cardcrawl.powers.IntangiblePower;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.relics.OddMushroom;
 import theClanless.theClanlessMod;
 import theClanless.util.TextureLoader;
 
@@ -55,10 +57,15 @@ public class UndeadPersistencePower extends AbstractPower implements CloneablePo
     }
 
     @Override
-    public float atDamageReceive(float damage, DamageInfo.DamageType damageType) {
-        int currentHP = AbstractDungeon.player.currentHealth;
+    public int onLoseHp(int damageAmount) {
+        super.onLoseHp(damageAmount);
+        int damage = damageAmount;
 
-        if (damage > currentHP) {
+        if (damage > 0 && owner.hasPower(IntangiblePower.POWER_ID)) {
+            damage = 1;
+        }
+
+        if (damageAmount > this.owner.currentHealth) {
             AbstractDungeon.actionManager.addToBottom(
                     new ApplyPowerAction(owner, owner, new IntangiblePower(owner, 3), 3)
             );
@@ -70,7 +77,6 @@ public class UndeadPersistencePower extends AbstractPower implements CloneablePo
         }
         return damage;
     }
-
 
     @Override
     public void updateDescription() {

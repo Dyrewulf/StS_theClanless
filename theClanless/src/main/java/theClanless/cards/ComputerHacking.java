@@ -26,13 +26,6 @@ import static theClanless.theClanlessMod.makeCardPath;
 // the NAME and the DESCRIPTION into your card - it'll get it automatically. Of course, this functionality could have easily
 // Been added to the default card rather than creating a new Dynamic one, but was done so to deliberately to showcase custom cards/inheritance a bit more.
 public class ComputerHacking extends CustomCard {
-
-    /*
-     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
-     *
-     * Strike Deal 7(9) damage.
-     */
-
     // TEXT DECLARATION
 
     public static final String ID = theClanlessMod.makeID(ComputerHacking.class.getSimpleName());

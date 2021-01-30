@@ -18,7 +18,7 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Psyche extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID("Psyche");
+    public static final String ID = theClanlessMod.makeID(Psyche.class.getSimpleName());
     public static final String IMG = makeCardPath("Psyche.png");
 
     // /TEXT DECLARATION/

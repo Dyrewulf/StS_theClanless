@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theClanless.actions.AdditionalStrikeAction;
 import theClanless.characters.TheClanless;
 import theClanless.theClanlessMod;
 
@@ -15,10 +16,10 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Blur extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID("Blur");
+    public static final String ID = theClanlessMod.makeID(Blur.class.getSimpleName());
     public static final String IMG = makeCardPath("Blur.png");
 
-    // STAT DECLARATION
+
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -29,10 +30,11 @@ public class Blur extends AbstractDynamicCard {
     public static final CardColor COLOR = TheClanless.Enums.CELERITY;
 
     private static final int COST = 1;
-    private static final int DAMAGE = 5;
-    private static final int MAGICNUMBER = 2;
+
+    private static final int DAMAGE = 8;
+    private static final int MAGICNUMBER = 1;
     private static final int MAGICNUMBER_PLUS = 1;
-    // /STAT DECLARATION/
+
 
     public Blur() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -42,16 +44,23 @@ public class Blur extends AbstractDynamicCard {
         this.tags.add(CardTags.STRIKE);
     }
 
-    // Actions the card should do.
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = this.magicNumber; i > 0; i--) {
+        AbstractDungeon.actionManager.addToBottom(
+                new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL)
+        );
+        if (this.upgraded) {
             AbstractDungeon.actionManager.addToBottom(
-                    new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+                    new AdditionalStrikeAction(p, new QuickJab(), false)
+            );
         }
+        AbstractDungeon.actionManager.addToBottom(
+                new AdditionalStrikeAction(p, new QuickJab(), true)
+        );
     }
 
-    // Upgraded stats.
+
     @Override
     public void upgrade() {
         if (!upgraded) {

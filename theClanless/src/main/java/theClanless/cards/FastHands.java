@@ -19,7 +19,7 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class FastHands extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID("FastHands");
+    public static final String ID = theClanlessMod.makeID(FastHands.class.getSimpleName());
     public static final String IMG = makeCardPath("FastHands.png");
 
     // /TEXT DECLARATION/
