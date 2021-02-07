@@ -47,7 +47,6 @@ public class Scrounging extends AbstractDynamicCard {
             upgradeName();
             upgradeMagicNumber(LOOK_UPGRADE);
             upgradeClanlessSecondMagicNumber(KEEP_UPGRADE);
-            this.rawDescription = CardCrawlGame.languagePack.getCardStrings(ID).UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

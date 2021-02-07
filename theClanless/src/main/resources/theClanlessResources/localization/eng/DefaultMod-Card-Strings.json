@@ -144,7 +144,7 @@
   },
   "theClanless:OrgyOfBlood": {
     "NAME": "Orgy of Blood",
-    "DESCRIPTION": "Exhaust a card from your hand. NL Heal !M! equal to its cost."
+    "DESCRIPTION": "Exhaust a card from your hand. NL Heal !M! a number of times equal to its cost."
   },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
