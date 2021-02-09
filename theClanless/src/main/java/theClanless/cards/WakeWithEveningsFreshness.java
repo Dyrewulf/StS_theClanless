@@ -69,4 +69,9 @@ public class WakeWithEveningsFreshness extends AbstractDynamicCard {
         }
     }
 
+    @Override
+    public float getTitleFontSize() {
+        return 14.0F;
+    }
+
 }

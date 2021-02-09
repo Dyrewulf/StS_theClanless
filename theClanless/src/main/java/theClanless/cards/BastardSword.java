@@ -40,7 +40,10 @@ public class BastardSword extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
-        this.retain = true;
+        this.selfRetain = true;
+
+        this.clanlesstags.add(ClanlessCardTags.MELEE);
+        this.clanlesstags.add(ClanlessCardTags.WEAPON);
     }
 
 
@@ -48,16 +51,13 @@ public class BastardSword extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if (this.isDamageModified) {
-            this.damage = this.baseDamage;
-            this.isDamageModified = false;
-        }
+
+
     }
 
     @Override
     public void onRetained() {
-        this.damage += this.magicNumber;
-        this.isDamageModified = true;
+        this.baseDamage += this.magicNumber;
     }
 
 

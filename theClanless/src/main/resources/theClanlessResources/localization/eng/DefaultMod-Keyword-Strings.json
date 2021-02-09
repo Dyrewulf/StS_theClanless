@@ -17,6 +17,15 @@
   },
   {
     "NAMES": [
+      "melee weapon",
+      "melee weapons",
+      "Melee weapons",
+      "Melee weapon"
+    ],
+    "DESCRIPTION": "Colorless attack cards that are retained."
+  },
+  {
+    "NAMES": [
       "press",
       "presses",
       "Press",

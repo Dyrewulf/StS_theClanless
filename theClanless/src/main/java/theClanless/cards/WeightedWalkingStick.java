@@ -69,4 +69,9 @@ public class WeightedWalkingStick extends AbstractDynamicCard {
             initializeDescription();
         }
     }
+
+    @Override
+    public float getTitleFontSize() {
+        return 16.0F;
+    }
 }

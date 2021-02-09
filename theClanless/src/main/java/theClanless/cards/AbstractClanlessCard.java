@@ -1,5 +1,8 @@
 package theClanless.cards;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+
+import java.util.ArrayList;
 
 public abstract class AbstractClanlessCard extends CustomCard {
 
@@ -15,6 +18,8 @@ public abstract class AbstractClanlessCard extends CustomCard {
     public int baseClanlessSecondMagicNumber;    // And our base stat - the number in it's base state. It will reset to that by default.
     public boolean upgradedClanlessSecondMagicNumber; // A boolean to check whether the number has been upgraded or not.
     public boolean isClanlessSecondMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
+
+    public ArrayList<ClanlessCardTags> clanlesstags;
 
     public AbstractClanlessCard(final String id,
                                 final String name,
@@ -41,5 +46,32 @@ public abstract class AbstractClanlessCard extends CustomCard {
         baseClanlessSecondMagicNumber += amount; // Upgrade the number by the amount you provide in your card.
         clanlessSecondMagicNumber = baseClanlessSecondMagicNumber; // Set the number to be equal to the base value.
         upgradedClanlessSecondMagicNumber = true; // Upgraded = true - which does what the above method does.
+    }
+
+    public static enum ClanlessCardTags {
+        ADDITIONAL,
+        MELEE,
+        RANGED,
+        WEAPON,
+        REACTION;
+
+        private ClanlessCardTags() {
+        }
+    }
+
+    public boolean isMeleeWeapon() {
+        return (this.hasClanlessTag(ClanlessCardTags.MELEE) && this.hasClanlessTag(ClanlessCardTags.WEAPON));
+    }
+
+    public boolean isRangedWeapon() {
+        return (this.hasClanlessTag(ClanlessCardTags.RANGED) && this.hasClanlessTag(ClanlessCardTags.WEAPON));
+    }
+
+    public boolean isReaction() {
+        return (this.hasClanlessTag(ClanlessCardTags.REACTION));
+    }
+
+    public boolean hasClanlessTag(ClanlessCardTags tagToCheck) {
+        return this.clanlesstags.contains(tagToCheck);
     }
 }
