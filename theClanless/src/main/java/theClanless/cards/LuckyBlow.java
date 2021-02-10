@@ -16,31 +16,39 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class LuckyBlow extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID(LuckyBlow.class.getSimpleName());
-    public static final String IMG = makeCardPath("LuckyBlow.png");
+    // public static final String ID = DefaultMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
+    public static final String ID = theClanlessMod.makeID("LuckyBlow"); // DELETE THIS ONE.
+    public static final String IMG = makeCardPath("LuckyBlow.png");// "public static final String IMG = makeCardPath("${NAME}.png");
+    // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
 
 
+    // /TEXT DECLARATION/
+
+
+    // STAT DECLARATION
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-    private static final AbstractCard.CardRarity RARITY = CardRarity.BASIC;
-    private static final AbstractCard.CardTarget TARGET = AbstractCard.CardTarget.ENEMY;
-    private static final AbstractCard.CardType TYPE = AbstractCard.CardType.ATTACK;
+    private static final AbstractCard.CardRarity RARITY = CardRarity.BASIC; //  Up to you, I like auto-complete on these
+    private static final AbstractCard.CardTarget TARGET = AbstractCard.CardTarget.ENEMY;  //   since they don't change much.
+    private static final AbstractCard.CardType TYPE = AbstractCard.CardType.ATTACK;       //
     public static final AbstractCard.CardColor COLOR = TheClanless.Enums.COLOR_CLANLESSRED;
 
-    private static final int COST = 1;
-    private static final int UPGRADED_COST = 1;
+    private static final int COST = 1;  // COST = ${COST}
+    private static final int UPGRADED_COST = 1; // UPGRADED_COST = ${UPGRADED_COST}
 
-    private static final int DAMAGE = 6;
-    private static final int UPGRADE_PLUS_DMG = 1;
+    private static final int DAMAGE = 6;    // DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_PLUS_DMG = 1;  // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
+
+    // /STAT DECLARATION/
 
 
-    public LuckyBlow() {
+    public LuckyBlow() { // public ${NAME}() - This one and the one right under the imports are the most important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = DAMAGE;
 
-        this.tags.add(CardTags.STARTER_STRIKE);
+        this.tags.add(CardTags.STARTER_STRIKE); //Tag your strike, defend and form (Wraith form, Demon form, Echo form, etc.) cards so that they function correctly.
         this.tags.add(CardTags.STRIKE);
     }
 

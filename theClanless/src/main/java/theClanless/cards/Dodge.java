@@ -13,10 +13,22 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Dodge extends AbstractDynamicCard {
 
+    /*
+     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
+     *
+     * Defend Gain 5 (8) block.
+     */
+
+
+    // TEXT DECLARATION
+
     public static final String ID = theClanlessMod.makeID(Dodge.class.getSimpleName());
     public static final String IMG = makeCardPath("Dodge.png");
 
+    // /TEXT DECLARATION/
 
+
+    // STAT DECLARATION
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -31,11 +43,14 @@ public class Dodge extends AbstractDynamicCard {
     private static final int UPGRADE_PLUS_BLOCK = 3;
 
 
+    // /STAT DECLARATION/
+
+
     public Dodge() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.block = this.baseBlock = BLOCK;
 
-        this.tags.add(CardTags.STARTER_DEFEND);
+        this.tags.add(CardTags.STARTER_DEFEND); //Tag your strike, defend and form (Wraith form, Demon form, Echo form, etc.) cards so that they function correctly
     }
 
     // Actions the card should do.

@@ -20,23 +20,29 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class ImmortalGrapple extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID(ImmortalGrapple.class.getSimpleName());
-    public static final String IMG = makeCardPath("ImmortalGrapple.png");
+    // public static final String ID = DefaultMod.makeID(${NAME}.class.getSimpleName()); // USE THIS ONE FOR THE TEMPLATE;
+    public static final String ID = theClanlessMod.makeID("ImmortalGrapple"); // DELETE THIS ONE.
+    public static final String IMG = makeCardPath("ImmortalGrapple.png");// "public static final String IMG = makeCardPath("${NAME}.png");
+    // This does mean that you will need to have an image with the same NAME as the card in your image folder for it to run correctly.
 
 
+    // /TEXT DECLARATION/
+
+
+    // STAT DECLARATION
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardRarity RARITY = CardRarity.RARE; //  Up to you, I like auto-complete on these
+    private static final CardTarget TARGET = CardTarget.ENEMY;  //   since they don't change much.
+    private static final CardType TYPE = CardType.ATTACK;       //
     public static final CardColor COLOR = TheClanless.Enums.POTENCE;
 
-    private static final int COST = 2;
+    private static final int COST = 2;  // COST = ${COST}
 
-    private static final int DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int DAMAGE = 8;    // DAMAGE = ${DAMAGE}
+    private static final int UPGRADE_PLUS_DMG = 3;  // UPGRADE_PLUS_DMG = ${UPGRADED_DAMAGE_INCREASE}
 
     private static final int MAGICNUMBER = 3;
     private static final int MAGICNUMBER_PLUS = 2;
@@ -44,7 +50,7 @@ public class ImmortalGrapple extends AbstractDynamicCard {
     // /STAT DECLARATION/
 
 
-    public ImmortalGrapple() {
+    public ImmortalGrapple() { // public ${NAME}() - This one and the one right under the imports are the most important ones, don't forget them
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;

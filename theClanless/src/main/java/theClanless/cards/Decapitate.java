@@ -15,10 +15,22 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Decapitate extends AbstractDynamicCard {
 
+    /*
+     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
+     *
+     * Defend Gain 5 (8) block.
+     */
+
+
+    // TEXT DECLARATION
+
     public static final String ID = theClanlessMod.makeID(Decapitate.class.getSimpleName());
     public static final String IMG = makeCardPath("Decapitate.png");
 
+    // /TEXT DECLARATION/
 
+
+    // STAT DECLARATION
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -33,6 +45,8 @@ public class Decapitate extends AbstractDynamicCard {
     private static final int MAGICNUMBER = 20;
     private static final int MAGICNUMBER_PLUS = 10;
 
+
+    // /STAT DECLARATION/
 
 
     public Decapitate() {

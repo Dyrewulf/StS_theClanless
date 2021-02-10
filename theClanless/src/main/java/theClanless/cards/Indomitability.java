@@ -15,7 +15,7 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Indomitability extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID(Indomitability.class.getSimpleName());
+    public static final String ID = theClanlessMod.makeID("Indomitability");
     public static final String IMG = makeCardPath("Indomitability.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);

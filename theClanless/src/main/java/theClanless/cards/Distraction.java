@@ -16,10 +16,12 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Distraction extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID(Distraction.class.getSimpleName());
+    public static final String ID = theClanlessMod.makeID("Distraction");
     public static final String IMG = makeCardPath("Distraction.png");
 
+    // /TEXT DECLARATION/
 
+    // STAT DECLARATION
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -33,6 +35,8 @@ public class Distraction extends AbstractDynamicCard {
 
     private static final int MAGICNUMBER = 4;
     private static final int MAGICNUMBER_PLUS = 2;
+
+    // /STAT DECLARATION/
 
 
     public Distraction() {

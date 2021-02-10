@@ -17,10 +17,22 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class Flash extends AbstractDynamicCard {
 
+    /*
+     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
+     *
+     * Defend Gain 5 (8) block.
+     */
+
+
+    // TEXT DECLARATION
+
     public static final String ID = theClanlessMod.makeID(Flash.class.getSimpleName());
     public static final String IMG = makeCardPath("Flash.png");
 
+    // /TEXT DECLARATION/
 
+
+    // STAT DECLARATION
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
@@ -33,6 +45,9 @@ public class Flash extends AbstractDynamicCard {
     private static final int COST = 0;
     private static final int MAGICNUMBER = 2;
     private static final int MAGICNUMBER_PLUS = 1;
+
+
+    // /STAT DECLARATION/
 
 
     public Flash() {

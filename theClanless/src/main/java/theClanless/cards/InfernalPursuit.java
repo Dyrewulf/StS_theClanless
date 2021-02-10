@@ -14,13 +14,26 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class InfernalPursuit extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID(InfernalPursuit.class.getSimpleName());
+    /*
+     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
+     *
+     * Hold Place Gain 1(2) Keywords(s).
+     */
+
+
+    // TEXT DECLARATION
+
+    public static final String ID = theClanlessMod.makeID("InfernalPursuit");
     public static final String IMG = makeCardPath("InfernalPursuit.png");
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
+    // /TEXT DECLARATION/
+
+
+    // STAT DECLARATION
 
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;

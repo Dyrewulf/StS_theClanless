@@ -14,6 +14,15 @@ import static theClanless.theClanlessMod.makeCardPath;
 
 public class FistsOfDeath extends AbstractDynamicCard {
 
+    /*
+     * Wiki-page: https://github.com/daviscook477/BaseMod/wiki/Custom-Cards
+     *
+     *
+     */
+
+
+    // TEXT DECLARATION
+
     public static final String ID = theClanlessMod.makeID("FistsOfDeath");
     public static final String IMG = makeCardPath("FistsOfDeath.png");
 
