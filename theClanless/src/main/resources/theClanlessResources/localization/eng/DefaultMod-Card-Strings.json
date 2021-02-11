@@ -1,4 +1,8 @@
 {
+  "theClanless:AblativeSkin": {
+    "NAME": "Ablative Skin",
+    "DESCRIPTION": "Gain !M! Plated Armor."
+  },
   "theClanless:Acrobatics": {
     "NAME": "Acrobatics",
     "DESCRIPTION": "Gain !M! Buffer.",
