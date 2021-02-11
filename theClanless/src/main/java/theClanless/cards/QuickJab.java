@@ -38,6 +38,8 @@ public class QuickJab extends AbstractDynamicCard {
         this.damage = this.baseDamage = DAMAGE;
         this.exhaust = true;
         this.tags.add(CardTags.STRIKE);
+
+        this.clanlessTags.add(clanlessCardTags.ADDITIONAL);
     }
 
 

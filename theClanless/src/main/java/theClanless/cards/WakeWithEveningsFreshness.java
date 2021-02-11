@@ -46,6 +46,8 @@ public class WakeWithEveningsFreshness extends AbstractDynamicCard {
         this.block = this.baseBlock = BLOCK;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
 
+        this.clanlessTags.add(clanlessCardTags.REACTION);
+
     }
 
     // Actions the card should do.

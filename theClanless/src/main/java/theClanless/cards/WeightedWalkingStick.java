@@ -37,6 +37,8 @@ public class WeightedWalkingStick extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         damage = baseDamage = DAMAGE;
         magicNumber = baseMagicNumber = DURABILITY;
+
+        this.clanlessTags.add(clanlessCardTags.WEAPON);
     }
 
     // Actions the card should do.

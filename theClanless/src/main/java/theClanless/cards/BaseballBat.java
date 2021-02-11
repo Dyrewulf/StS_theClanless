@@ -41,6 +41,9 @@ public class BaseballBat extends AbstractDynamicCard {
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
         this.selfRetain = true;
         RefundVariable.setBaseValue(this, MAGICNUMBER);
+
+        this.clanlessTags.add(clanlessCardTags.MELEE);
+        this.clanlessTags.add(clanlessCardTags.WEAPON);
     }
 
 

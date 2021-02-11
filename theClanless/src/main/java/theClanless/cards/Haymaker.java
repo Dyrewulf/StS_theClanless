@@ -46,6 +46,7 @@ public class Haymaker extends AbstractDynamicCard {
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
         this.exhaust = true;
         this.tags.add(CardTags.STRIKE);
+        this.clanlessTags.add(clanlessCardTags.ADDITIONAL);
     }
 
 
