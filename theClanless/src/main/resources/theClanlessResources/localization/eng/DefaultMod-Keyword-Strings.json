@@ -16,6 +16,22 @@
     "DESCRIPTION": "Reduces incoming damage. Celerity cards consume for effect."
   },
   {
+    "PROPER_NAME": "melee weapon",
+    "NAMES": [
+      "melee weapon",
+      "melee_weapon"
+    ],
+    "DESCRIPTION": "Colorless attack cards that are retained."
+  },
+  {
+    "PROPER_NAME": "Melee weapon",
+    "NAMES": [
+      "Melee weapon",
+      "Melee_weapon"
+    ],
+    "DESCRIPTION": "Colorless attack cards that are retained."
+  },
+  {
     "NAMES": [
       "press",
       "presses",
@@ -25,9 +41,18 @@
     "DESCRIPTION": "Increases Strength next turn. Potence cards consume for effect."
   },
   {
+    "PROPER_NAME": "additional strike",
     "NAMES": [
-      "additional",
-      "Additional"
+      "additional strike",
+      "additional_strike"
+    ],
+    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
+  },
+  {
+    "PROPER_NAME": "Additional strike",
+    "NAMES": [
+      "Additional strike",
+      "Additional_strike"
     ],
     "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
   }

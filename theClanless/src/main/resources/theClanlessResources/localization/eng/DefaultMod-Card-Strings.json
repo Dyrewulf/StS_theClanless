@@ -16,8 +16,8 @@
   },
   "theClanless:Blur": {
     "NAME": "Blur",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional strike.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional strikes."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional_strike.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !M! theclanless:additional_strikes."
   },
   "theClanless:BoxedIn": {
     "NAME": "Boxed In",
@@ -96,6 +96,11 @@
     "NAME": "Forced Vigilance",
     "DESCRIPTION": "Gain 1 energized for up to !M! unused energy at the end of your turn.",
     "UPGRADE_DESCRIPTION": "Gain 1 energized for up to !M! unused energy at the end of your turn."
+  },
+  "theClanless:ForgersHammer": {
+    "NAME": "Forger's Hammer",
+    "DESCRIPTION": "Add a theclanless:melee_weapon to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add an upgraded theclanless:melee_weapon to your hand. NL Exhaust"
   },
   "theClanless:GrowingFury": {
     "NAME": "Growing Fury",
@@ -251,7 +256,7 @@
     "UPGRADE_DESCRIPTION": "Gain !B! block. Consume up to 2 theclanless:maneuvers to gain !M! block each."
   },
   "theClanless:WakeWithEveningsFreshness": {
-    "NAME": "Wake w/ Evening Freshness",
+    "NAME": "Wake with Evening's Freshness",
     "DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity.",
     "UPGRADE_DESCRIPTION": "Gain !B! block. If target monster intends to attack gain !M! dexterity."
   },
