@@ -15,8 +15,8 @@
   },
   "theClanless:BastardSword": {
     "NAME": "Bastard Sword",
-    "DESCRIPTION": "Deal !D! damage. Retain. When retained, increase Bastard Sword's damage by !M! for this combat.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Retain. When retained, increase Bastard Sword's damage by !M! for this combat."
+    "DESCRIPTION": "Deal !D! damage. Retain. When retained, increase Bastard Sword's damage by !M! until played.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Retain. When retained, increase Bastard Sword's damage by !M! until played."
   },
   "theClanless:Blur": {
     "NAME": "Blur",

@@ -32,6 +32,22 @@
     "DESCRIPTION": "Colorless attack cards that are retained."
   },
   {
+    "PROPER_NAME": "melee weapons",
+    "NAMES": [
+      "melee weapons",
+      "melee_weapons"
+    ],
+    "DESCRIPTION": "Colorless attack cards that are retained."
+  },
+  {
+    "PROPER_NAME": "Melee weapons",
+    "NAMES": [
+      "Melee weapons",
+      "Melee_weapons"
+    ],
+    "DESCRIPTION": "Colorless attack cards that are retained."
+  },
+  {
     "NAMES": [
       "press",
       "presses",
@@ -53,6 +69,22 @@
     "NAMES": [
       "Additional strike",
       "Additional_strike"
+    ],
+    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
+  },
+  {
+    "PROPER_NAME": "additional strikes",
+    "NAMES": [
+      "additional strikes",
+      "additional_strikes"
+    ],
+    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
+  },
+  {
+    "PROPER_NAME": "Additional strikes",
+    "NAMES": [
+      "Additional strikes",
+      "Additional_strikes"
     ],
     "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
   }
