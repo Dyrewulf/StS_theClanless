@@ -149,7 +149,7 @@
   },
   "theClanless:OrgyOfBlood": {
     "NAME": "Orgy of Blood",
-    "DESCRIPTION": "Exhaust a card from your hand. NL Heal !M! equal to its cost."
+    "DESCRIPTION": "Exhaust a card from your hand. NL Heal !M! a number of times equal to its cost."
   },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
@@ -180,6 +180,10 @@
     "NAME": "Shattering Blow",
     "DESCRIPTION": "Deal !D! damage. Deals double damage against block.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Deals double damage against block."
+  },
+  "theClanless:Scrounging": {
+    "NAME": "Scrounging",
+    "DESCRIPTION": "Look at the top !M! cards of your draw pile. NL Take up to !theClanless:M2! into your hand."
   },
   "theClanless:Sideslip": {
     "NAME": "Sideslip",

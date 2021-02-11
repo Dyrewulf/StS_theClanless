@@ -30,7 +30,7 @@ public class WeightedWalkingStick extends AbstractDynamicCard {
     private static final int UPGRADE_PLUS_DMG = 2;
 
     private static final int DURABILITY = 3;
-    private static final int DURABILITY_UPGRADE = 4;
+    private static final int DURABILITY_UPGRADE = 1;
     // /STAT DECLARATION/
 
     public WeightedWalkingStick() {

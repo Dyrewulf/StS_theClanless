@@ -30,7 +30,6 @@ public class LuckyBlow extends AbstractDynamicCard {
     public static final AbstractCard.CardColor COLOR = TheClanless.Enums.COLOR_CLANLESSRED;
 
     private static final int COST = 1;
-    private static final int UPGRADED_COST = 1;
 
     private static final int DAMAGE = 6;
     private static final int UPGRADE_PLUS_DMG = 1;
@@ -59,7 +58,6 @@ public class LuckyBlow extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_PLUS_DMG);
-            upgradeBaseCost(UPGRADED_COST);
             this.exhaust = true;
             this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
