@@ -3,6 +3,7 @@ package theClanless.cards;
 import com.evacipated.cardcrawl.mod.stslib.variables.RefundVariable;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -34,13 +35,15 @@ public class BastardSword extends AbstractDynamicCard {
     private static final int UPGRADE_PLUS_DMG = 4;
     private static final int MAGICNUMBER = 2;
 
+    private int retainedCount = 0;
+
 
 
     public BastardSword() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
-        this.retain = true;
+        this.selfRetain = true;
     }
 
 
@@ -48,16 +51,17 @@ public class BastardSword extends AbstractDynamicCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
                 new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        if (this.isDamageModified) {
-            this.damage = this.baseDamage;
-            this.isDamageModified = false;
-        }
+        int reduction = (this.magicNumber * this.retainedCount);
+        this.retainedCount = 0;
+        this.addToBot(new ModifyDamageAction(this.uuid, -reduction));
+
+
     }
 
     @Override
     public void onRetained() {
-        this.damage += this.magicNumber;
-        this.isDamageModified = true;
+        this.retainedCount++;
+        this.addToBot(new ModifyDamageAction(this.uuid, this.magicNumber));
     }
 
 
