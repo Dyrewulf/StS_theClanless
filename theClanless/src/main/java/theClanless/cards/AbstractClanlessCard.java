@@ -19,7 +19,7 @@ public abstract class AbstractClanlessCard extends CustomCard {
     public boolean upgradedClanlessSecondMagicNumber; // A boolean to check whether the number has been upgraded or not.
     public boolean isClanlessSecondMagicNumberModified; // A boolean to check whether the number has been modified or not, for coloring purposes. (red/green)
 
-    public ArrayList<clanlessCardTags> clanlessTags;
+    public final ArrayList<clanlessCardTags> clanlessTags = new ArrayList<>();
 
     public AbstractClanlessCard(final String id,
                                 final String name,
