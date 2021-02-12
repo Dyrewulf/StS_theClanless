@@ -42,6 +42,8 @@ public class MightyGrapple extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
+
+        this.clanlessTags.add(clanlessCardTags.GRAPPLE);
     }
 
 

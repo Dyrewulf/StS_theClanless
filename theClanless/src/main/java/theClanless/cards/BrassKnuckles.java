@@ -44,6 +44,9 @@ public class BrassKnuckles extends AbstractDynamicCard {
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
         this.selfRetain = true;
         ExhaustiveVariable.setBaseValue(this, MAGICNUMBER);
+
+        this.clanlessTags.add(clanlessCardTags.MELEE);
+        this.clanlessTags.add(clanlessCardTags.WEAPON);
     }
 
 

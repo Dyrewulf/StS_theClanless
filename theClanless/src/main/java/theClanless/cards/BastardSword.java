@@ -55,7 +55,8 @@ public class BastardSword extends AbstractDynamicCard {
         this.retainedCount = 0;
         this.addToBot(new ModifyDamageAction(this.uuid, -reduction));
 
-
+        this.clanlessTags.add(clanlessCardTags.MELEE);
+        this.clanlessTags.add(clanlessCardTags.WEAPON);
     }
 
     @Override
