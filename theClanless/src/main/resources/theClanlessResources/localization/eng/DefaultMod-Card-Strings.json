@@ -136,6 +136,11 @@
     "DESCRIPTION": "Deal !D! damage. Consume theclanless:presses to apply Constricted equal to !M! + consumed presses. Otherwise, gain !M! presses.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. Consume theclanless:presses to apply Constricted equal to !M! + consumed presses. Otherwise, gain !M! presses."
   },
+  "theClanless:LightningReflexes": {
+    "NAME": "Lightning Reflexes",
+    "DESCRIPTION": "Gain X theclanless:additional_strikes.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 theclanless:additional_strikes."
+  },
   "theClanless:LuckyBlow": {
     "NAME": "Lucky Blow",
     "DESCRIPTION": "Deal !D! damage.",
