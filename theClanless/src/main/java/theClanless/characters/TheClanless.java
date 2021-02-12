@@ -22,11 +22,14 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import theClanless.cards.core.BumsRush;
+import theClanless.cards.core.Dodge;
+import theClanless.cards.core.LuckyBlow;
+import theClanless.cards.core.TargetVitals;
 import theClanless.relics.CelerityRelic;
 import theClanless.relics.FortitudeRelic;
 import theClanless.relics.PotenceRelic;
 import theClanless.theClanlessMod;
-import theClanless.cards.*;
 
 import java.util.ArrayList;
 import java.util.Map;

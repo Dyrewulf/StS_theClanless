@@ -1,16 +1,13 @@
 package theClanless.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.RegenPower;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 import com.megacrit.cardcrawl.vfx.ThoughtBubble;
-import theClanless.cards.Haymaker;
-import theClanless.cards.QuickJab;
+import theClanless.cards.core.Haymaker;
+import theClanless.cards.core.QuickJab;
 import theClanless.powers.AdditionalStrikePower;
 
 public class LightningReflexesAction extends AbstractGameAction {

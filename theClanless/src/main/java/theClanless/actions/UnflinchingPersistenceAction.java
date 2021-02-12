@@ -3,7 +3,7 @@ package theClanless.actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import theClanless.cards.UnflinchingPersistence;
+import theClanless.cards.fortitude.UnflinchingPersistence;
 
 public class UnflinchingPersistenceAction extends AbstractGameAction {
     private final AbstractCard card;
