@@ -1,24 +1,16 @@
 package theClanless.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
-import com.megacrit.cardcrawl.actions.unique.DiscoveryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.screens.CardRewardScreen;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDiscardEffect;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
-import theClanless.cards.AbstractClanlessCard;
-import theClanless.cards.BaseballBat;
-import theClanless.cards.BastardSword;
-import theClanless.cards.BrassKnuckles;
+import theClanless.cards.core.BaseballBat;
+import theClanless.cards.core.BastardSword;
+import theClanless.cards.core.BrassKnuckles;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class ForgersHammerAction extends AbstractGameAction {
 
