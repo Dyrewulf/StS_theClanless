@@ -12,7 +12,7 @@ import static theClanless.theClanlessMod.makeCardPath;
 public class Scrounging extends AbstractDynamicCard {
     // TEXT DECLARATION
     public static final String ID = theClanlessMod.makeID(Scrounging.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("Scrounging.png");
     // /TEXT DECLARATION/
 
     // STAT DECLARATION

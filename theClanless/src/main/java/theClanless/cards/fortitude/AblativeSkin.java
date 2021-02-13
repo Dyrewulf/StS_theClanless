@@ -13,7 +13,7 @@ import static theClanless.theClanlessMod.makeCardPath;
 public class AblativeSkin extends AbstractDynamicCard {
 
     public static final String ID = theClanlessMod.makeID("AblativeSkin");
-    private static final String IMG = makeCardPath("Skill.png");
+    private static final String IMG = makeCardPath("AblativeSkin.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;

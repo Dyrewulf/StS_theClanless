@@ -12,7 +12,7 @@ import static theClanless.theClanlessMod.makeCardPath;
 public class OrgyOfBlood extends AbstractDynamicCard {
     // TEXT DECLARATION
     public static final String ID = theClanlessMod.makeID(OrgyOfBlood.class.getSimpleName());
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("OrgyOfBlood.png");
     // /TEXT DECLARATION/
 
     // STAT DECLARATION
