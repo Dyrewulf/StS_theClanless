@@ -170,6 +170,11 @@
     "DESCRIPTION": "Gain !M! theclanless:maneuvers.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
   },
+  "theClanless:PushingTheLimit": {
+    "NAME": "Pushing the Limit",
+    "DESCRIPTION": "Deal !D! damage.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage."
+  },
   "theClanless:PulledFangs": {
     "NAME": "Pulled Fangs",
     "DESCRIPTION": "Deal !D! damage and apply !M! weakness. If your last card played was an attack gain 1 energy.",
