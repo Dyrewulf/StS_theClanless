@@ -1,9 +1,5 @@
-package theClanless.cards.potence;
+package theClanless.cards.celerity;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -12,15 +8,14 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theClanless.actions.RangedAttackAction;
 import theClanless.cards.AbstractDynamicCard;
 import theClanless.characters.TheClanless;
-import theClanless.powers.PressPower;
 import theClanless.theClanlessMod;
 
 import static theClanless.theClanlessMod.makeCardPath;
 
-public class ThrownGate extends AbstractDynamicCard {
+public class MercurysArrow extends AbstractDynamicCard {
 
-    public static final String ID = theClanlessMod.makeID("ThrownGate");
-    public static final String IMG = makeCardPath("ThrownGate.png");
+    public static final String ID = theClanlessMod.makeID(MercurysArrow.class.getSimpleName());
+    public static final String IMG = makeCardPath("MercurysArrow.png");
 
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -30,23 +25,28 @@ public class ThrownGate extends AbstractDynamicCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    public static final CardColor COLOR = TheClanless.Enums.POTENCE;
+    public static final CardColor COLOR = TheClanless.Enums.CELERITY;
 
     private static final int COST = 1;
 
-    private static final int DAMAGE = 6;
-    private static final int DAMAGE_PLUS = 3;
+    private static final int DAMAGE = 3;
 
     private static final int MAGICNUMBER = 2;
     private static final int MAGICNUMBER_PLUS = 2;
 
+    private static final int SECONDMAGICNUMBER = 2;
+    private static final int SECONDMAGICNUMBER_PLUS = 1;
+
     // /STAT DECLARATION/
 
 
-    public ThrownGate() {
+    public MercurysArrow() {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
+        this.clanlessSecondMagicNumber = this.baseClanlessSecondMagicNumber = SECONDMAGICNUMBER;
+
+        this.clanlessTags.add(clanlessCardTags.RANGED);
     }
 
 
@@ -54,7 +54,7 @@ public class ThrownGate extends AbstractDynamicCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(
-                new RangedAttackAction(p, m, damage, this.damageTypeForTurn, magicNumber, 1)
+                new RangedAttackAction(p, m, damage, this.damageTypeForTurn, magicNumber, clanlessSecondMagicNumber)
         );
     }
 
@@ -64,8 +64,8 @@ public class ThrownGate extends AbstractDynamicCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(DAMAGE_PLUS);
             upgradeMagicNumber(MAGICNUMBER_PLUS);
+            upgradeClanlessSecondMagicNumber(SECONDMAGICNUMBER_PLUS);
             initializeDescription();
         }
     }

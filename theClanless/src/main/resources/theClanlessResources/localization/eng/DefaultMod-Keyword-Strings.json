@@ -1,5 +1,69 @@
 [
   {
+    "PROPER_NAME": "additional strike",
+    "NAMES": [
+      "additional strike",
+      "additional_strike"
+    ],
+    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
+  },
+  {
+    "PROPER_NAME": "Additional strike",
+    "NAMES": [
+      "Additional strike",
+      "Additional_strike"
+    ],
+    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
+  },
+  {
+    "PROPER_NAME": "additional strikes",
+    "NAMES": [
+      "additional strikes",
+      "additional_strikes"
+    ],
+    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
+  },
+  {
+    "PROPER_NAME": "Additional strikes",
+    "NAMES": [
+      "Additional strikes",
+      "Additional_strikes"
+    ],
+    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
+  },
+  {
+    "PROPER_NAME": "ranged strike",
+    "NAMES": [
+      "ranged strike",
+      "ranged_strike"
+    ],
+    "DESCRIPTION": "A strike that consumes a maneuver to deal additional damage and reduce thorns."
+  },
+  {
+    "PROPER_NAME": "Ranged strike",
+    "NAMES": [
+      "Ranged strike",
+      "Ranged_strike"
+    ],
+    "DESCRIPTION": "A strike that consumes a maneuver to deal additional damage and reduce thorns."
+  },
+  {
+    "PROPER_NAME": "ranged strikes",
+    "NAMES": [
+      "ranged strikes",
+      "ranged_strikes"
+    ],
+    "DESCRIPTION": "A strike that consumes a maneuver to deal additional damage and reduce thorns."
+  },
+  {
+    "PROPER_NAME": "Ranged strikes",
+    "NAMES": [
+      "Ranged strikes",
+      "Ranged_strikes"
+    ],
+    "DESCRIPTION": "A strike that consumes a maneuver to deal additional damage and reduce thorns."
+  },
+  {
     "NAMES": [
       "Bloodheal",
       "bloodheal"
@@ -55,37 +119,6 @@
       "Presses"
     ],
     "DESCRIPTION": "Increases Strength next turn. Potence cards consume for effect."
-  },
-  {
-    "PROPER_NAME": "additional strike",
-    "NAMES": [
-      "additional strike",
-      "additional_strike"
-    ],
-    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
-  },
-  {
-    "PROPER_NAME": "Additional strike",
-    "NAMES": [
-      "Additional strike",
-      "Additional_strike"
-    ],
-    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
-  },
-  {
-    "PROPER_NAME": "additional strikes",
-    "NAMES": [
-      "additional strikes",
-      "additional_strikes"
-    ],
-    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
-  },
-  {
-    "PROPER_NAME": "Additional strikes",
-    "NAMES": [
-      "Additional strikes",
-      "Additional_strikes"
-    ],
-    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
   }
+
 ]
