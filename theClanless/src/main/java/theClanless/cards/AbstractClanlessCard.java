@@ -1,6 +1,8 @@
 package theClanless.cards;
+
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.CardStrings;
 
 import java.util.ArrayList;
 
@@ -52,15 +54,22 @@ public abstract class AbstractClanlessCard extends CustomCard {
         return this.clanlessTags.contains(tagToCheck);
     }
 
-    public boolean isRangedWeapon () {
+    public boolean isRangedWeapon() {
         return (this.hasClanlessTag(clanlessCardTags.RANGED) && this.hasClanlessTag(clanlessCardTags.WEAPON));
     }
 
-    public boolean isMeleeWeapon () {
+    public boolean isMeleeWeapon() {
         return (this.hasClanlessTag(clanlessCardTags.MELEE) && this.hasClanlessTag(clanlessCardTags.WEAPON));
     }
 
-    public static enum clanlessCardTags {
+    protected void upgradeDescription() {
+        CardStrings cardText = CardCrawlGame.languagePack.getCardStrings(this.cardID);
+        if (cardText.UPGRADE_DESCRIPTION != null) {
+            this.rawDescription = cardText.UPGRADE_DESCRIPTION;
+        }
+    }
+
+    public enum clanlessCardTags {
         MELEE,
         RANGED,
         WEAPON,
@@ -68,7 +77,7 @@ public abstract class AbstractClanlessCard extends CustomCard {
         ADDITIONAL,
         GRAPPLE;
 
-        private clanlessCardTags() {
+        clanlessCardTags() {
 
         }
     }

@@ -13,6 +13,12 @@
       " attacks restores HP and exhausts."
     ]
   },
+  "theClanless:ExtraTurnPower": {
+    "NAME": "Extra Turn",
+    "DESCRIPTIONS": [
+      "Take another turn after this one."
+    ]
+  },
   "theClanless:ForcedVigilancePower": {
     "NAME": "Forced Vigilance",
     "DESCRIPTIONS": [
