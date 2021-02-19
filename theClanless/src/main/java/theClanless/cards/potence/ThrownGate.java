@@ -1,9 +1,5 @@
 package theClanless.cards.potence;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -12,7 +8,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theClanless.actions.RangedAttackAction;
 import theClanless.cards.AbstractDynamicCard;
 import theClanless.characters.TheClanless;
-import theClanless.powers.PressPower;
 import theClanless.theClanlessMod;
 
 import static theClanless.theClanlessMod.makeCardPath;
@@ -47,6 +42,8 @@ public class ThrownGate extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
+
+        this.clanlessTags.add(clanlessCardTags.RANGED);
     }
 
 

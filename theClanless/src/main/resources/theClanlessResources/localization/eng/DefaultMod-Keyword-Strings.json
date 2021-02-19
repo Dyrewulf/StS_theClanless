@@ -1,67 +1,13 @@
 [
   {
-    "PROPER_NAME": "additional strike",
+    "PROPER_NAME": "Additional Strike",
     "NAMES": [
       "additional strike",
-      "additional_strike"
-    ],
-    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
-  },
-  {
-    "PROPER_NAME": "Additional strike",
-    "NAMES": [
-      "Additional strike",
-      "Additional_strike"
-    ],
-    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
-  },
-  {
-    "PROPER_NAME": "additional strikes",
-    "NAMES": [
+      "additional_strike",
       "additional strikes",
       "additional_strikes"
     ],
     "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
-  },
-  {
-    "PROPER_NAME": "Additional strikes",
-    "NAMES": [
-      "Additional strikes",
-      "Additional_strikes"
-    ],
-    "DESCRIPTION": "Add a zero cost strike card to your hand that exhausts. You can only gain strikes from one source each turn."
-  },
-  {
-    "PROPER_NAME": "ranged strike",
-    "NAMES": [
-      "ranged strike",
-      "ranged_strike"
-    ],
-    "DESCRIPTION": "A strike that consumes a maneuver to deal additional damage and reduce thorns."
-  },
-  {
-    "PROPER_NAME": "Ranged strike",
-    "NAMES": [
-      "Ranged strike",
-      "Ranged_strike"
-    ],
-    "DESCRIPTION": "A strike that consumes a maneuver to deal additional damage and reduce thorns."
-  },
-  {
-    "PROPER_NAME": "ranged strikes",
-    "NAMES": [
-      "ranged strikes",
-      "ranged_strikes"
-    ],
-    "DESCRIPTION": "A strike that consumes a maneuver to deal additional damage and reduce thorns."
-  },
-  {
-    "PROPER_NAME": "Ranged strikes",
-    "NAMES": [
-      "Ranged strikes",
-      "Ranged_strikes"
-    ],
-    "DESCRIPTION": "A strike that consumes a maneuver to deal additional damage and reduce thorns."
   },
   {
     "NAMES": [
@@ -71,54 +17,39 @@
     "DESCRIPTION": "The next attack you play this turn heals you for the amount of damage done, and is Exhausted."
   },
   {
+    "PROPER_NAME": "Maneuver",
     "NAMES": [
       "maneuver",
-      "maneuvers",
-      "Maneuver",
-      "Maneuvers"
+      "maneuvers"
     ],
     "DESCRIPTION": "Reduces incoming damage. Celerity cards consume for effect."
   },
   {
-    "PROPER_NAME": "melee weapon",
+    "PROPER_NAME": "Melee Weapon",
     "NAMES": [
       "melee weapon",
-      "melee_weapon"
-    ],
-    "DESCRIPTION": "Colorless attack cards that are retained."
-  },
-  {
-    "PROPER_NAME": "Melee weapon",
-    "NAMES": [
-      "Melee weapon",
-      "Melee_weapon"
-    ],
-    "DESCRIPTION": "Colorless attack cards that are retained."
-  },
-  {
-    "PROPER_NAME": "melee weapons",
-    "NAMES": [
+      "melee_weapon",
       "melee weapons",
       "melee_weapons"
     ],
-    "DESCRIPTION": "Colorless attack cards that are retained."
-  },
-  {
-    "PROPER_NAME": "Melee weapons",
-    "NAMES": [
-      "Melee weapons",
-      "Melee_weapons"
-    ],
-    "DESCRIPTION": "Colorless attack cards that are retained."
+    "DESCRIPTION": "A colorless attack card that is retained."
   },
   {
     "NAMES": [
       "press",
-      "presses",
-      "Press",
-      "Presses"
+      "presses"
     ],
     "DESCRIPTION": "Increases Strength next turn. Potence cards consume for effect."
+  },
+  {
+    "PROPER_NAME": "Ranged",
+    "NAMES": [
+      "ranged",
+      "ranged attack",
+      "ranged_attack",
+      "ranged strike",
+      "ranged_strike"
+    ],
+    "DESCRIPTION": "An attack that consumes a maneuver to deal additional damage and reduce thorns."
   }
-
 ]

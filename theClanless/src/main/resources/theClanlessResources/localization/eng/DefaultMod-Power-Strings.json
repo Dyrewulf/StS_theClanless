@@ -19,6 +19,14 @@
       "Take another turn after this one."
     ]
   },
+  "theClanless:FleetnessPower": {
+    "NAME": "Fleetness",
+    "DESCRIPTIONS": [
+      "Whenever you play an attack, gain #b",
+      " Maneuver.",
+      " Maneuvers."
+    ]
+  },
   "theClanless:ForcedVigilancePower": {
     "NAME": "Forced Vigilance",
     "DESCRIPTIONS": [
@@ -56,6 +64,13 @@
       "votes each turn."
     ]
   },
+  "theClanless:PrecisionPower": {
+    "NAME": "Precision",
+    "DESCRIPTIONS": [
+      "Ranged Attacks deal #b",
+      " more damage."
+    ]
+  },
   "theClanless:SideslipPower": {
     "NAME": "Sideslip",
     "DESCRIPTIONS": [
@@ -72,7 +87,6 @@
       "."
     ]
   },
-
   "theClanless:TempBufferPower": {
     "NAME": "Transient Buffer",
     "DESCRIPTIONS": [
