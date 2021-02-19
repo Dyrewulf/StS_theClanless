@@ -183,6 +183,11 @@
     "DESCRIPTION": "Gain !M! theclanless:maneuvers.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
   },
+  "theClanless:Pursuit": {
+    "NAME": "Pursuit",
+    "DESCRIPTION": "Gain !M! theclanless:Maneuver. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Maneuver. NL Gain !B! Block. NL Gain an theclanless:Additional_Strike."
+  },
   "theClanless:PushingTheLimit": {
     "NAME": "Pushing the Limit",
     "DESCRIPTION": "Deal !D! damage.",
