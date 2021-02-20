@@ -18,11 +18,11 @@ public class Handgun extends AbstractDynamicCard {
 
     public static final String ID = theClanlessMod.makeID(Handgun.class.getSimpleName());
     public static final String IMG = makeCardPath("SaturdayNightSpecial.png");
-    public static final String[] UPGRADE_IMAGES = new String[] {
+    public static final String[] UPGRADE_IMAGES = new String[]{
             makeCardPath("SaturdayNightSpecial.png"),
             makeCardPath("Beretta9mm.png"),
             makeCardPath("44Magnum.png"),
-            makeCardPath("DesertEagle.png") };
+            makeCardPath("DesertEagle.png")};
 
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -45,7 +45,9 @@ public class Handgun extends AbstractDynamicCard {
 
     // /STAT DECLARATION/
 
-    public Handgun() { this(0); }
+    public Handgun() {
+        this(0);
+    }
 
     public Handgun(int timesUpgraded) {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
@@ -98,6 +100,6 @@ public class Handgun extends AbstractDynamicCard {
 
     @Override
     public boolean canUpgrade() {
-        retrurn(this.timesUpgraded < 3);
+        return (this.timesUpgraded < 3);
     }
 }
