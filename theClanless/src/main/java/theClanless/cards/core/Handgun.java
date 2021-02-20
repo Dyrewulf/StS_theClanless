@@ -86,7 +86,7 @@ public class Handgun extends AbstractDynamicCard {
     @Override
     protected void upgradeName() {
         ++this.timesUpgraded;
-        if (this.timesUpgraded == 3) this.upgraded = true;
+        if (this.timesUpgraded >= 3) this.upgraded = true;
         this.name = GUN_NAMES[this.timesUpgraded];
         this.initializeTitle();
     }
@@ -98,7 +98,6 @@ public class Handgun extends AbstractDynamicCard {
 
     @Override
     public boolean canUpgrade() {
-        if (this.timesUpgraded < 3) return true;
-        else return false;
+        retrurn(this.timesUpgraded < 3);
     }
 }
