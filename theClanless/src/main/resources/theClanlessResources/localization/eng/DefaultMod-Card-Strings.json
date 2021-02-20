@@ -119,7 +119,7 @@
   "theClanless:IncreasedStrength": {
     "NAME": "Increased Strength",
     "DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat.",
-    "UPGRADE_DESCRIPTION": "Increase the da~age of all Potence attacks by !M! for the remainder of combat."
+    "UPGRADE_DESCRIPTION": "Increase the damage of all Potence attacks by !M! for the remainder of combat."
   },
   "theClanless:Indomitability": {
     "NAME": "Indomitability",
