@@ -66,6 +66,11 @@
     "DESCRIPTION": "If the target monster has !M! or less HP, it loses it's head.",
     "UPGRADE_DESCRIPTION": "If the target monster has !M! or less HP, it loses it's head."
   },
+  "theClanless:Disarm": {
+    "NAME": "Disarm",
+    "DESCRIPTION": "Reduce target's strength by !M!. Increase by 1 each attack played. Target recovers half of the lost strength.",
+    "UPGRADE_DESCRIPTION": "Reduce target's strength by !M!. Increase by 1 each attack played. Target recovers half of the lost strength."
+  },
   "theClanless:Distraction": {
     "NAME": "Distraction",
     "DESCRIPTION": "Draw !M! cards. Discard 2.",
