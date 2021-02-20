@@ -10,12 +10,10 @@ import theClanless.cards.AbstractDynamicCard;
 import theClanless.characters.TheClanless;
 import theClanless.theClanlessMod;
 
-import static theClanless.theClanlessMod.makeCardPath;
-
 public class ThrownSewerLid extends AbstractDynamicCard {
 
     public static final String ID = theClanlessMod.makeID("ThrownSewerLid");
-    public static final String IMG = makeCardPath("ThrownSewerLid.png");
+    public static final String IMG = theClanlessMod.makeCardPath("ThrownSewerLid.png");
 
 
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
@@ -40,6 +38,8 @@ public class ThrownSewerLid extends AbstractDynamicCard {
         super(ID, IMG, COST, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = DAMAGE;
         this.magicNumber = this.baseMagicNumber = MAGICNUMBER;
+
+        this.clanlessTags.add(clanlessCardTags.RANGED);
     }
 
 

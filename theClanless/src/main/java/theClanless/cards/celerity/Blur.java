@@ -4,9 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theClanless.actions.AdditionalStrikeAction;
 import theClanless.cards.AbstractDynamicCard;
@@ -14,17 +12,10 @@ import theClanless.cards.core.QuickJab;
 import theClanless.characters.TheClanless;
 import theClanless.theClanlessMod;
 
-import static theClanless.theClanlessMod.makeCardPath;
-
 public class Blur extends AbstractDynamicCard {
 
     public static final String ID = theClanlessMod.makeID(Blur.class.getSimpleName());
-    public static final String IMG = makeCardPath("Blur.png");
-
-
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String IMG = theClanlessMod.makeCardPath("Blur.png");
 
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
@@ -68,6 +59,7 @@ public class Blur extends AbstractDynamicCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(MAGICNUMBER_PLUS);
+            upgradeDescription();
             initializeDescription();
         }
     }

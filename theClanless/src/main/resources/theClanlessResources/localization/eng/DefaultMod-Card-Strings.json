@@ -96,6 +96,10 @@
     "DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card."
   },
+  "theClanless:Fleetness": {
+    "NAME": "Fleetness",
+    "DESCRIPTION": "When you play an Attack, gain !M! theclanless:Maneuver."
+  },
   "theClanless:ForcedVigilance": {
     "NAME": "Forced Vigilance",
     "DESCRIPTION": "Gain 1 energized for up to !M! unused energy at the end of your turn.",
@@ -170,10 +174,19 @@
     "NAME": "Orgy of Blood",
     "DESCRIPTION": "Exhaust a card from your hand. NL Heal !M! a number of times equal to its cost."
   },
+  "theClanless:Precision": {
+    "NAME": "Precision",
+    "DESCRIPTION": "theclanless:Ranged attacks deal !M! additional damage."
+  },
   "theClanless:Psyche": {
     "NAME": "Psyche!",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers. NL Take another turn after this one, keeping all theclanless:maneuvers. NL Exhaust."
+  },
+  "theClanless:Pursuit": {
+    "NAME": "Pursuit",
+    "DESCRIPTION": "Gain !M! theclanless:Maneuver. NL Gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theclanless:Maneuver. NL Gain !B! Block. NL Gain an theclanless:Additional_Strike."
   },
   "theClanless:PushingTheLimit": {
     "NAME": "Pushing the Limit",
@@ -232,7 +245,7 @@
   "theClanless:Steadfastness": {
     "NAME": "Steadfastness",
     "DESCRIPTION": "Gain !M! dexterity.",
-    "UPGRADE_DESCRIPTION":  "Gain !M! dexterity."
+    "UPGRADE_DESCRIPTION": "Gain !M! dexterity."
   },
   "theClanless:TasteOfVitae": {
     "NAME": "Taste of Vitae",
