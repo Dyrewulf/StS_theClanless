@@ -309,5 +309,17 @@
     "NAME": "Well Aimed Car",
     "DESCRIPTION": "Deal !D! damage at the end of next turn.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage at the end of next turn."
+  },
+
+  "theClanless:Handgun": {
+    "NAME": "Saturday Night Special",
+    "DESCRIPTION": "theclanless:Ranged_strike for !D! damage. NL theclanless:Maneuver for !M! additional damage. Gain a maneuver.",
+    "UPGRADE_DESCRIPTION": "theclanless:Ranged_strike for !D! damage. NL theclanless:Maneuver for !M! additional damage. Gain a maneuver.",
+    "EXTENDED_DESCRIPTION": [
+      "Saturday Night Special",
+      "Beretta 9mm",
+      ".44 Magnum",
+      "Desert Eagle"
+    ]
   }
 }
