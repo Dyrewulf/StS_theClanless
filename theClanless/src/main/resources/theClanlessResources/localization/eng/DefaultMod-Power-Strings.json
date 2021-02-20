@@ -5,6 +5,13 @@
       "You have gained an additional strike this round, and cannot gain more until next round."
     ]
   },
+  "theClanless:ArmorOfVitalityPower": {
+    "NAME": "Armor of Vitality",
+    "DESCRIPTIONS": [
+      "Attackers suffer #b",
+      " damage."
+    ]
+  },
   "theClanless:BloodhealPower": {
     "NAME": "Bloodheal",
     "DESCRIPTIONS": [

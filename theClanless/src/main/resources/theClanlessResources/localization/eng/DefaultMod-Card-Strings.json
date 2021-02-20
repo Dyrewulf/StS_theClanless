@@ -8,6 +8,10 @@
     "DESCRIPTION": "Gain !M! Buffer.",
     "UPGRADE_DESCRIPTION": "Gain !M! Buffer. NL Your next attack costs 1 less Energy."
   },
+  "theClanless:ArmorOfVitality": {
+    "NAME": "Armor of Vitality",
+    "DESCRIPTION": "Gain !B! Block. NL Whenever you are attacked this turn, deal !M! damage back."
+  },
   "theClanless:BaseballBat": {
     "NAME": "Baseball Bat",
     "DESCRIPTION": "Deal !D! damage and refund up to !M! energy. Retain.",
