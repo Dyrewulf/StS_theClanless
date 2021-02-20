@@ -13,6 +13,13 @@
       " attacks restores HP and exhausts."
     ]
   },
+  "theClanless:FlurryOfActionPower": {
+    "NAME": "Flurry of Action",
+    "DESCRIPTIONS": [
+      "Additional Attacks deal #b",
+      " more damage."
+    ]
+  },
   "theClanless:ForcedVigilancePower": {
     "NAME": "Forced Vigilance",
     "DESCRIPTIONS": [

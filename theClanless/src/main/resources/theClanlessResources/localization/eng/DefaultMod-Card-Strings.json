@@ -8,6 +8,11 @@
     "DESCRIPTION": "Gain !M! Buffer.",
     "UPGRADE_DESCRIPTION": "Gain !M! Buffer. NL Your next attack costs 1 less Energy."
   },
+  "theClanless:Backstab": {
+    "NAME": "Backstab",
+    "DESCRIPTION": "Deal !D! damage. NL Innate. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage and gain an theclanless:additional_strike. NL Innate. Exhaust."
+  },
   "theClanless:BaseballBat": {
     "NAME": "Baseball Bat",
     "DESCRIPTION": "Deal !D! damage and refund up to !M! energy. Retain.",
@@ -95,6 +100,11 @@
     "NAME": "Flash",
     "DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card.",
     "UPGRADE_DESCRIPTION": "Gain !M! theclanless:maneuvers and draw a card."
+  },
+  "theClanless:FlurryOfAction": {
+    "NAME": "Flurry of Action",
+    "DESCRIPTION": "theclanless:Additional_strikes attacks deal !M! additional damage.",
+    "UPGRADE_DESCRIPTION": "theclanless:Additional_strikes attacks deal !M! additional damage."
   },
   "theClanless:ForcedVigilance": {
     "NAME": "Forced Vigilance",
